@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizzeria Maragall | Pizza & Cucina Italiana</title>
+    <title>Pizzeria Maragall | Autentica Pizza Italiana a Barcellona</title>
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,9 +24,9 @@
                 <img src="/assets/logo.png" alt="Pizzeria Maragall Logo">
             </a>
             <div class="nav-links">
-                <a href="#about">CHI SIAMO</a>
-                <a href="#menu">MENU</a>
-                <a href="#gallery">GALLERIA</a>
+                <a href="#about">STORIA</a>
+                <a href="#pizza-mese">SPECIALITÀ</a>
+                <a href="#menu">IL MENU</a>
                 <a href="#contact" class="btn-link">PRENOTA</a>
             </div>
             <div class="hamburger">
@@ -38,11 +38,11 @@
     <!-- Hero Section -->
     <header class="hero">
         <div class="hero-content">
-            <h1 class="hero-title">Pizzeria Maragall</h1>
+            <h1 class="hero-title">Pizzeria<br>Maragall</h1>
             <p class="hero-subtitle">PIZZA & CUCINA ITALIANA – BARCELONA</p>
             <div class="hero-btns">
-                <a href="#contact" class="btn">PRENOTA ORA</a>
-                <a href="#menu" class="btn btn-outline">VEDI IL MENU</a>
+                <a href="#contact" class="btn">PRENOTA UN TAVOLO</a>
+                <a href="#menu" class="btn btn-outline">SCOPRI IL MENU</a>
             </div>
         </div>
     </header>
@@ -50,22 +50,43 @@
     <!-- About Section -->
     <section id="about" class="about fade-in-section">
         <div class="container">
-            <h2 class="section-title">LA NOSTRA STORIA</h2>
-            <p class="section-subtitle">Passione Italiana nel cuore di Barcellona</p>
+            <h2 class="section-title">PASSIONE <span class="text-accent-green">ITALIANA</span></h2>
+            <p class="section-subtitle">Dal 2012, il vero sapore di casa nel quartiere Sant Andreu</p>
             
             <div class="about-text">
                 <p>
-                    Dal 2012 portiamo la vera tradizione italiana a Barcellona. 
-                    Utilizziamo solo ingredienti freschi e di alta qualità, importati direttamente dall'Italia 
-                    o selezionati dai migliori produttori locali. Il nostro impasto lievita lentamente per 
-                    garantire leggerezza e digeribilità.
+                    Situata a Carrer de Juan de Garay, 8, la Pizzeria Maragall è il punto di riferimento per chi cerca 
+                    la vera pizza italiana a Barcellona. Il nostro segreto? Un impasto sottile e croccante cotto 
+                    nel forno a legna, ingredienti freschissimi e l'amore dello Chef Fabrizio per le combinazioni uniche.
+                    Che tu preferisca i grandi classici o sapori più audaci, qui ti sentirai come in Italia.
                 </p>
             </div>
 
             <div class="about-hours">
-                <h3>ORARI DI APERTURA</h3>
-                <p>Lun - Dom: 13:00 - 16:00 | 19:30 - 23:30</p>
-                <p>Martedì: Chiuso</p>
+                <h3>ORARI</h3>
+                <p><strong>Lunedì - Venerdì:</strong> 20:00 - 00:00</p>
+                <p><strong>Sabato - Domenica:</strong> 13:30 - 16:30 | 20:00 - 00:00</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pizza del Mese (Priority Section) -->
+    <section id="pizza-mese" class="pizza-mese fade-in-section">
+        <div class="container">
+            <div class="pizza-mese-container">
+                <div class="pizza-mese-content">
+                    <span class="badge">SPECIALITÀ DELLA CASA</span>
+                    <h2>PIZZA MARAGALL</h2>
+                    <p class="pizza-mese-desc">
+                        La nostra firma. Una combinazione perfetta di sapori equilibrati che ha conquistato 
+                        centinaia di clienti. Ingredienti selezionati, base croccante e un tocco segreto dello chef.
+                        Vieni a scoprire perché è la preferita del quartiere.
+                    </p>
+                    <a href="#contact" class="btn">PROVALA ORA</a>
+                </div>
+                <div class="pizza-mese-image">
+                    <img src="/assets/pizza-margherita.jpg" alt="Pizza Maragall Special">
+                </div>
             </div>
         </div>
     </section>
@@ -73,8 +94,8 @@
     <!-- Menu Section -->
     <section id="menu" class="menu fade-in-section">
         <div class="container">
-            <h2 class="section-title">I NOSTRI CLASSICI</h2>
-            <p class="section-subtitle">Una selezione delle nostre pizze preferite</p>
+            <h2 class="section-title">I NOSTRI <span class="text-accent-red">CLASSICI</span></h2>
+            <p class="section-subtitle">Cotte in forno a legna, sottili e croccanti</p>
 
             <div class="menu-grid">
                 <!-- Item 1 -->
@@ -83,45 +104,59 @@
                         <img src="/assets/pizza-margherita.jpg" alt="Pizza Margherita">
                     </div>
                     <div class="menu-details">
-                        <div class="menu-name">
-                            <h3>Margherita DOP</h3>
+                        <div class="menu-header">
+                            <h3 class="menu-name">Margherita Classica</h3>
                             <span class="menu-price">€9.50</span>
                         </div>
-                        <p class="menu-desc">Pomodoro San Marzano, Mozzarella di Bufala Campana DOP, Basilico fresco, Olio EVO.</p>
+                        <p class="menu-desc">Pomodoro San Marzano, Mozzarella fior di latte, Basilico fresco. La regina della tradizione.</p>
                     </div>
                 </div>
 
                 <!-- Item 2 -->
                 <div class="menu-item">
                     <div class="menu-img-container">
-                        <img src="/assets/pizza-pepperoni.jpg" alt="Pizza Diavola">
+                        <img src="/assets/pizza-pepperoni.jpg" alt="Pizza Prosciutto">
                     </div>
                     <div class="menu-details">
-                        <div class="menu-name">
-                            <h3>Diavola Piccante</h3>
-                            <span class="menu-price">€11.00</span>
+                        <div class="menu-header">
+                            <h3 class="menu-name">Prosciutto e Funghi</h3>
+                            <span class="menu-price">€11.50</span>
                         </div>
-                        <p class="menu-desc">Pomodoro, Mozzarella fior di latte, Salame piccante Napoli, Peperoncino fresco.</p>
+                        <p class="menu-desc">Pomodoro, Mozzarella, Prosciutto cotto di alta qualità e funghi freschi.</p>
                     </div>
                 </div>
                 
-                <!-- Item 3 (Repeating Item 1 image for mockup if needed, but lets just use 2 for clean look or reuse) -->
+                <!-- Item 3 -->
                  <div class="menu-item">
                     <div class="menu-img-container">
-                        <img src="/assets/hero-bg.jpg" alt="Capricciosa">
+                        <img src="/assets/hero-bg.jpg" alt="Porchetta">
                     </div>
                     <div class="menu-details">
-                        <div class="menu-name">
-                            <h3>Capricciosa</h3>
+                        <div class="menu-header">
+                            <h3 class="menu-name">La Porchetta</h3>
                             <span class="menu-price">€12.50</span>
                         </div>
-                        <p class="menu-desc">Pomodoro, Mozzarella, Funghi, Carciofini, Prosciutto Cotto, Olive nere.</p>
+                        <p class="menu-desc">Una delizia romana: Porchetta arrosto aromatica, Mozzarella e patate al forno.</p>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="menu-item">
+                    <div class="menu-img-container">
+                        <img src="/assets/gallery-chef.jpg" alt="Nutella Pizza">
+                    </div>
+                    <div class="menu-details">
+                        <div class="menu-header">
+                            <h3 class="menu-name">Pizza Nutella</h3>
+                            <span class="menu-price">€8.00</span>
+                        </div>
+                        <p class="menu-desc">Per finire in dolcezza. Pizza dolce con abbondante Nutella e granella di nocciole.</p>
                     </div>
                 </div>
             </div>
             
-            <div style="text-align: center; margin-top: 3rem;">
-                <a href="#" class="btn btn-outline">SCARICA IL MENU COMPLETO</a>
+            <div style="text-align: center; margin-top: 4rem;">
+                <a href="https://pizzeriamaragall.eatbu.com/?lang=it#menu" target="_blank" class="btn btn-secondary">VEDI MENU COMPLETO ONLINE</a>
             </div>
         </div>
     </section>
@@ -130,10 +165,10 @@
     <section id="gallery" class="gallery fade-in-section">
         <div class="gallery-grid">
             <div class="gallery-item">
-                <img src="/assets/gallery-chef.jpg" alt="Chef making pizza">
+                <img src="/assets/gallery-chef.jpg" alt="Chef al lavoro">
             </div>
             <div class="gallery-item">
-                <img src="/assets/gallery-interior.jpg" alt="Restaurant Interior">
+                <img src="/assets/gallery-interior.jpg" alt="Interno del ristorante">
             </div>
         </div>
     </section>
@@ -142,12 +177,22 @@
     <section id="contact" class="reservation fade-in-section">
         <div class="container">
             <h2>PRENOTA IL TUO TAVOLO</h2>
-            <p>Vieni a trovarci per un'esperienza autentica.</p>
-            <a href="https://pizzeriamaragall.eatbu.com/?lang=it#reservation" target="_blank" class="btn">PRENOTA ONLINE</a>
+            <p>Siamo spesso al completo, consigliamo la prenotazione.</p>
+            <a href="https://pizzeriamaragall.eatbu.com/?lang=it#reservation" target="_blank" class="btn">PRENOTA ORA</a>
             
-            <div style="margin-top: 3rem; color: #ccc;">
-                <p><i data-lucide="phone" style="display:inline; vertical-align:middle; margin-right:5px;"></i> +34 931 23 45 67</p>
-                <p><i data-lucide="map-pin" style="display:inline; vertical-align:middle; margin-right:5px;"></i> Passeig de Maragall, Barcelona</p>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <i data-lucide="phone" style="margin-right:10px; color:var(--accent-red);"></i>
+                    <span>+34 935 02 72 14</span>
+                </div>
+                <div class="contact-item">
+                    <i data-lucide="map-pin" style="margin-right:10px; color:var(--accent-red);"></i>
+                    <span>Carrer de Juan de Garay, 8, Barcelona</span>
+                </div>
+                <div class="contact-item">
+                    <i data-lucide="clock" style="margin-right:10px; color:var(--accent-red);"></i>
+                    <span>Aperto tutti i giorni</span>
+                </div>
             </div>
         </div>
     </section>
@@ -162,7 +207,7 @@
                 <a href="#"><i data-lucide="facebook"></i></a>
             </div>
 
-            <p class="copyright">&copy; 2024 Pizzeria Maragall. Tutti i diritti riservati.</p>
+            <p class="copyright">&copy; 2025 Pizzeria Maragall S.L. - Barcellona.</p>
         </div>
     </footer>
 
