@@ -239,7 +239,7 @@ img {
 .hero-logo-text {
     font-family: var(--font-heading);
     font-size: 6rem; /* Large size for logo replacement */
-    font-weight: 300; /* Newgate Light style */
+    font-weight: 700; /* Bold style */
     color: white;
     margin: 0 auto 1.5rem auto;
     line-height: 1;
