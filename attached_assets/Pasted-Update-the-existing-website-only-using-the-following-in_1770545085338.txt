@@ -1,0 +1,112 @@
+Update the existing website only using the following instructions.
+
+Important rules:
+
+Do NOT rebuild the site
+
+Do NOT refactor files or structure
+
+Do NOT introduce frameworks or libraries
+
+Only modify content, labels, links, and light styling where needed
+
+1. Pizza para llevar (NEW INFO)
+
+Add a clear text mention (near hero, menu, or contact section):
+
+“🍕 Pizza para llevar – Ordina da casa”
+
+Include this message:
+
+Customers can call directly to order pizza
+
+Delivery available via Glovo and Uber Eats
+
+Keep the tone friendly and simple.
+
+2. Rename Section
+
+Replace the section title “Specialità della casa” with:
+
+“🍕 Pizza del Mese”
+
+Keep this section visually highlighted and prominent.
+
+3. Storia → Chi Siamo
+
+Rename the section “Storia” to “Chi Siamo”.
+
+Update the text to focus on:
+
+The team
+
+The warm, welcoming energy
+
+Neighborhood pizzeria feeling
+
+Passion for pizza and people
+
+Use information and tone inspired by:
+https://pizzeriamaragall.eatbu.com/?lang=it
+
+4. Contacts (UPDATE CONTENT)
+
+Update the contact section with the following exact details:
+
+Phone: +34 935 02 72 14
+
+Email: pizzeriamaragall@gmail.com
+
+Address:
+Carrer de Juan de Garay 8
+08041 Barcelona
+Spagna
+
+5. Buttons & Links (IMPORTANT)
+
+Update button links so they point to:
+
+Call button → tel:+34935027214
+
+Email button → mailto:pizzeriamaragall@gmail.com
+
+Instagram → https://www.instagram.com/pizzeriamaragall/
+
+Facebook → https://www.facebook.com/pages/Pizzeria-Maragall/320753815391331
+
+Use simple icons or text buttons.
+
+6. Menus (PDF)
+
+Prepare a Menu section with buttons linking to PDF files:
+
+“Menu (Català / Castellano)”
+
+“Menu (English)”
+
+For now, use placeholder links and keep the structure ready.
+The PDF files will be uploaded later.
+
+7. Photos & Content Source
+
+Use photos, texts, and menu information from:
+https://pizzeriamaragall.eatbu.com/?lang=it
+
+If images are missing, use placeholders but keep layout consistent.
+
+8. Design Consistency
+
+Keep the current modern design direction inspired by sliceoftheunion.com:
+
+Light background
+
+Warm, artisan mood
+
+Green / white / red accents
+
+Generous spacing
+
+No dark or heavy sections
+
+Do not change navigation order or core layout.
+Apply only the updates listed above.

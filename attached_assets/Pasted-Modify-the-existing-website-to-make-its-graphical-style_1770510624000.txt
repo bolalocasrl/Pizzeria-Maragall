@@ -1,0 +1,95 @@
+Modify the existing website to make its graphical style more closely match sliceoftheunion.com, while keeping the current structure and content.
+
+Important constraints:
+
+Do NOT rebuild the site from scratch.
+
+Do NOT refactor or reorganize files.
+
+Do NOT add new frameworks.
+
+Only adjust styles, layout, typography, spacing, colors, and interactions to reflect the reference style.
+
+Use minimal changes and minimal AI credits.
+
+Visual Style Improvements — Make the site feel like sliceoftheunion.com by applying:
+
+1. Layout & Grid
+
+Use centered content with generous whitespace.
+
+Keep sections separated clearly with big padding.
+
+Remove tight boxed layouts; prefer subtle spacing.
+
+2. Typography
+
+Use large bold headings similar to sliceoftheunion.com.
+
+Use clean sans-serif fonts with good line-height and spacing.
+
+Headings should have strong presence and clean scale.
+
+3. Colors & Backgrounds
+
+Use light, neutral background colors (off-white/cream) instead of dark blocks.
+
+Use green/red accent colors from the logo for buttons and highlights.
+
+Avoid heavy dark backgrounds unless necessary.
+
+4. Buttons
+
+Make buttons wide, centered, and minimal.
+
+Add subtle hover transitions (color/scale).
+
+Prefer solid blocks with soft shadows.
+
+5. Hero & Sections
+
+Make the hero section feel spacious and centered.
+
+Add thin line separators between major sections.
+
+Add smooth fade/slide-on-scroll for section entrances.
+
+6. Gallery & Menu Cards
+
+Align images in a clean grid with uniform spacing.
+
+Add subtle shadows and border radius for photos.
+
+Hover interaction: soft scale and shadow.
+
+7. Pizza del Mese Special
+
+Give it a bold, centered card with large heading and clean layout.
+
+Use accent colors and whitespace to highlight it.
+
+8. Spacing & Alignment
+
+Increase vertical spacing between sections.
+
+Center text where appropriate.
+
+Use consistent margin/padding across sections.
+
+Responsive & Interactions:
+
+Keep mobile-first
+
+Smooth scroll behavior
+
+Subtle fade-in animations (CSS, low-cost)
+
+Do NOT change:
+
+Navigation order
+
+Fundamental HTML structure
+
+JavaScript logic unless necessary
+
+The result should visually echo the feel, whitespace, typography, and clean layout of sliceoftheunion.com while keeping your current site co
