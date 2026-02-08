@@ -225,7 +225,7 @@ img {
 /* Hero Section */
 .hero {
     height: 95vh;
-    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url('/assets/hero-bg.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('/assets/heropm1.jpg'); /* Darker overlay for readability */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -234,6 +234,15 @@ img {
     justify-content: center;
     text-align: center;
     position: relative;
+}
+
+.hero-logo {
+    max-width: 500px;
+    width: 90%;
+    height: auto;
+    margin: 0 auto 2rem auto;
+    display: block;
+    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.3));
 }
 
 .hero-content {
@@ -476,7 +485,7 @@ img {
 /* Reservation Section */
 .reservation {
     padding: 12rem 0;
-    background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('/assets/gallery-interior.jpg');
+    background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('/assets/tavolipm.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
