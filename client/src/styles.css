@@ -6,7 +6,7 @@
     --accent-green: #008f40; /* Vibrant Italian Green */
     --accent-gold: #e6b800;
     --card-bg: #ffffff;
-    --font-heading: 'Oswald', sans-serif;
+    --font-heading: 'Fraunces', serif; /* Closest Google Font match to Newgate */
     --font-body: 'Open Sans', sans-serif;
     --transition-speed: 0.4s;
     --shadow-soft: 0 20px 40px rgba(0,0,0,0.03); /* Very subtle, editorial shadow */
@@ -36,10 +36,10 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
     text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 700;
+    letter-spacing: 0px; /* Tighter tracking for Fraunces */
+    font-weight: 300; /* Light weight as requested */
     color: #111;
-    line-height: 1.2;
+    line-height: 1.1;
 }
 
 a {
@@ -225,7 +225,7 @@ img {
 /* Hero Section */
 .hero {
     height: 95vh;
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('/assets/heropm1.jpg'); /* Darker overlay for readability */
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('/assets/heropm1.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -236,13 +236,22 @@ img {
     position: relative;
 }
 
-.hero-logo {
-    max-width: 500px;
-    width: 90%;
-    height: auto;
-    margin: 0 auto 2rem auto;
-    display: block;
-    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.3));
+.hero-logo-text {
+    font-family: var(--font-heading);
+    font-size: 6rem; /* Large size for logo replacement */
+    font-weight: 300; /* Newgate Light style */
+    color: white;
+    margin: 0 auto 1.5rem auto;
+    line-height: 1;
+    text-transform: none; /* Keep natural case or uppercase depending on pref, user asked for "Pizzeria Maragall" */
+    text-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    letter-spacing: -2px;
+}
+/* Mobile adjustment for hero logo */
+@media (max-width: 768px) {
+    .hero-logo-text {
+        font-size: 3.5rem;
+    }
 }
 
 .hero-content {
