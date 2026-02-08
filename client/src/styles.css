@@ -491,16 +491,17 @@ img {
 /* Footer */
 .footer {
     padding: 4rem 0;
-    background-color: #1a1a1a;
+    background-color: #eae7df; /* Light warm beige/grey instead of black */
     text-align: center;
-    color: #999;
+    color: #444;
+    border-top: 1px solid #dcdcdc;
 }
 
 .footer-logo {
     font-family: var(--font-heading);
     font-size: 2rem;
     margin-bottom: 1.5rem;
-    color: white;
+    color: var(--accent-green); /* Green accent for logo */
 }
 
 .social-icons {
@@ -511,7 +512,7 @@ img {
 }
 
 .social-icons a {
-    color: white;
+    color: var(--text-color);
     transition: color 0.3s ease;
 }
 
@@ -520,7 +521,7 @@ img {
 }
 
 .copyright {
-    color: #555;
+    color: #666;
     font-size: 0.8rem;
 }
 
