@@ -1,16 +1,22 @@
 /* Reset & Base */
 :root {
-    --bg-color: #fdfcf8; /* Even lighter, cleaner off-white */
-    --text-color: #2a2a2a; /* Sharp charcoal */
-    --accent-red: #d0202a; /* Vibrant Italian Red */
-    --accent-green: #008f40; /* Vibrant Italian Green */
+    --bg-color: #fdfcf8;
+    /* Even lighter, cleaner off-white */
+    --text-color: #2a2a2a;
+    /* Sharp charcoal */
+    --accent-red: #d0202a;
+    /* Vibrant Italian Red */
+    --accent-green: #008f40;
+    /* Vibrant Italian Green */
     --accent-gold: #e6b800;
     --card-bg: #ffffff;
-    --font-heading: 'Fraunces', serif; /* Closest Google Font match to Newgate */
+    --font-heading: 'Fraunces', serif;
+    /* Closest Google Font match to Newgate */
     --font-body: 'Open Sans', sans-serif;
     --transition-speed: 0.4s;
-    --shadow-soft: 0 20px 40px rgba(0,0,0,0.03); /* Very subtle, editorial shadow */
-    --shadow-hover: 0 30px 60px rgba(0,0,0,0.08);
+    --shadow-soft: 0 20px 40px rgba(0, 0, 0, 0.03);
+    /* Very subtle, editorial shadow */
+    --shadow-hover: 0 30px 60px rgba(0, 0, 0, 0.08);
 }
 
 * {
@@ -28,16 +34,24 @@ body {
     font-family: var(--font-body);
     background-color: var(--bg-color);
     color: var(--text-color);
-    line-height: 1.9; /* Increased for editorial feel */
+    line-height: 1.9;
+    /* Increased for editorial feel */
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--font-heading);
     text-transform: uppercase;
-    letter-spacing: 0px; /* Tighter tracking for Fraunces */
-    font-weight: 300; /* Light weight as requested */
+    letter-spacing: 0px;
+    /* Tighter tracking for Fraunces */
+    font-weight: 300;
+    /* Light weight as requested */
     color: #111;
     line-height: 1.1;
 }
@@ -51,18 +65,25 @@ a {
 img {
     max-width: 100%;
     display: block;
-    border-radius: 2px; /* Slight softening */
+    border-radius: 2px;
+    /* Slight softening */
 }
 
 /* Utilities */
 .container {
-    max-width: 1300px; /* Wider container */
+    max-width: 1300px;
+    /* Wider container */
     margin: 0 auto;
     padding: 0 2.5rem;
 }
 
-.text-accent-red { color: var(--accent-red); }
-.text-accent-green { color: var(--accent-green); }
+.text-accent-red {
+    color: var(--accent-red);
+}
+
+.text-accent-green {
+    color: var(--accent-green);
+}
 
 .btn {
     display: inline-block;
@@ -114,13 +135,15 @@ img {
 }
 
 .section-title {
-    font-size: 4rem; /* Bigger */
+    font-size: 4rem;
+    /* Bigger */
     margin-bottom: 1.5rem;
     text-align: center;
     position: relative;
     display: inline-block;
     width: 100%;
-    letter-spacing: -1px; /* Tighter heading tracking */
+    letter-spacing: -1px;
+    /* Tighter heading tracking */
 }
 
 .section-subtitle {
@@ -137,7 +160,8 @@ img {
 
 /* Animations */
 .fade-in-section {
-    opacity: 1; /* Make visible by default for reliability */
+    opacity: 1;
+    /* Make visible by default for reliability */
     transform: none;
     transition: opacity 1.2s cubic-bezier(0.22, 1, 0.36, 1), transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
     will-change: opacity, visibility;
@@ -154,10 +178,13 @@ img {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 0.5rem 0; /* Reduced padding further */
+    padding: 0.5rem 0;
+    /* Reduced padding further */
     z-index: 1000;
-    background-color: white; /* Always white */
-    box-shadow: 0 2px 20px rgba(0,0,0,0.05); /* Constant shadow */
+    background-color: white;
+    /* Always white */
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+    /* Constant shadow */
 }
 
 /* Remove or simplify .scrolled as it's now the default state */
@@ -172,22 +199,26 @@ img {
 }
 
 .logo img {
-    height: 55px; /* Slightly larger logo */
+    height: 55px;
+    /* Slightly larger logo */
     width: auto;
     transition: height 0.3s ease;
 }
 
 .nav-links {
     display: flex;
-    gap: 3rem; /* More spacing between links */
-    align-items: center; /* Ensure vertical centering */
+    gap: 3rem;
+    /* More spacing between links */
+    align-items: center;
+    /* Ensure vertical centering */
 }
 
 .nav-links a {
     font-family: var(--font-heading);
     font-size: 0.9rem;
     letter-spacing: 2px;
-    color: var(--text-color); /* Always dark color */
+    color: var(--text-color);
+    /* Always dark color */
     font-weight: 500;
     position: relative;
     opacity: 0.9;
@@ -235,7 +266,7 @@ img {
     right: 0;
     background-color: white;
     min-width: 160px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
     padding: 0.5rem 0;
     display: none;
@@ -255,13 +286,15 @@ img {
 .lang-menu a {
     padding: 0.8rem 1.5rem;
     font-size: 0.95rem;
-    color: var(--text-color) !important; /* Force dark text */
+    color: var(--text-color) !important;
+    /* Force dark text */
     text-decoration: none;
     display: flex;
     align-items: center;
     gap: 0.8rem;
     transition: background-color 0.2s ease;
-    font-family: var(--font-body); /* Body font for dropdown */
+    font-family: var(--font-body);
+    /* Body font for dropdown */
     letter-spacing: 0.5px;
     font-weight: 400;
 }
@@ -285,7 +318,7 @@ img {
         margin-left: 0;
         margin-top: 2rem;
     }
-    
+
     .lang-menu {
         position: relative;
         box-shadow: none;
@@ -294,7 +327,7 @@ img {
         align-items: center;
         padding-top: 1rem;
     }
-    
+
     .lang-menu a {
         justify-content: center;
         font-size: 1.2rem;
@@ -306,14 +339,15 @@ img {
     display: none;
     cursor: pointer;
     font-size: 1.5rem;
-    color: var(--text-color); /* Always dark color */
+    color: var(--text-color);
+    /* Always dark color */
 }
 
 
 /* Hero Section */
 .hero {
     height: 95vh;
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('/assets/heropm1.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('/assets/heropm1.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -322,19 +356,24 @@ img {
     justify-content: center;
     text-align: center;
     position: relative;
+    z-index: 2;
 }
 
 .hero-logo-text {
     font-family: var(--font-heading);
-    font-size: 6rem; /* Large size for logo replacement */
-    font-weight: 700; /* Bold style */
+    font-size: 6rem;
+    /* Large size for logo replacement */
+    font-weight: 700;
+    /* Bold style */
     color: white;
     margin: 0 auto 1.5rem auto;
     line-height: 1;
-    text-transform: none; /* Keep natural case or uppercase depending on pref, user asked for "Pizzeria Maragall" */
-    text-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    text-transform: none;
+    /* Keep natural case or uppercase depending on pref, user asked for "Pizzeria Maragall" */
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     letter-spacing: -2px;
 }
+
 /* Mobile adjustment for hero logo */
 @media (max-width: 768px) {
     .hero-logo-text {
@@ -350,11 +389,12 @@ img {
 }
 
 .hero-title {
-    font-size: 7.5rem; /* Massive, editorial size */
+    font-size: 7.5rem;
+    /* Massive, editorial size */
     line-height: 0.9;
     margin-bottom: 2rem;
     text-transform: uppercase;
-    text-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     color: white;
 }
 
@@ -363,13 +403,14 @@ img {
     margin-bottom: 3.5rem;
     font-weight: 400;
     letter-spacing: 4px;
-    text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     opacity: 0.9;
 }
 
 /* About Section */
 .about {
-    padding: 12rem 0; /* Generous spacing */
+    padding: 12rem 0;
+    /* Generous spacing */
     background-color: var(--bg-color);
     text-align: center;
 }
@@ -377,7 +418,8 @@ img {
 .about-text {
     max-width: 750px;
     margin: 0 auto;
-    font-size: 1.3rem; /* Larger body text */
+    font-size: 1.3rem;
+    /* Larger body text */
     color: #444;
     margin-bottom: 3rem;
     font-weight: 300;
@@ -410,10 +452,12 @@ img {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 6rem; /* Huge gap */
+    gap: 6rem;
+    /* Huge gap */
     max-width: 1200px;
     margin: 0 auto;
-    background: transparent; /* Cleaner look, no box */
+    background: transparent;
+    /* Cleaner look, no box */
     border: none;
     padding: 0;
     box-shadow: none;
@@ -434,7 +478,7 @@ img {
 
 .pizza-mese-image img {
     border-radius: 2px;
-    box-shadow: 0 25px 50px rgba(0,0,0,0.1);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
     transform: rotate(-1deg);
     transition: transform 0.6s ease;
 }
@@ -458,7 +502,8 @@ img {
     letter-spacing: 2px;
     font-weight: 700;
     margin-bottom: 1.5rem;
-    border-radius: 0; /* Sharp, modern */
+    border-radius: 0;
+    /* Sharp, modern */
 }
 
 .pizza-mese h2 {
@@ -477,17 +522,20 @@ img {
 /* Menu Section */
 .menu {
     padding: 12rem 0;
-    background-color: #f7f5f0; /* Subtle contrast */
+    background-color: #f7f5f0;
+    /* Subtle contrast */
 }
 
 .menu-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Bigger cards */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    /* Bigger cards */
     gap: 4rem;
 }
 
 .menu-item {
-    background: transparent; /* No card background, more editorial */
+    background: transparent;
+    /* No card background, more editorial */
     border-radius: 0;
     overflow: visible;
     transition: transform 0.3s ease;
@@ -498,11 +546,13 @@ img {
 
 .menu-item:hover {
     transform: translateY(-8px);
-    box-shadow: none; /* Keep it clean */
+    box-shadow: none;
+    /* Keep it clean */
 }
 
 .menu-img-container {
-    height: 350px; /* Taller images */
+    height: 350px;
+    /* Taller images */
     overflow: hidden;
     position: relative;
     border-radius: 2px;
@@ -522,7 +572,8 @@ img {
 }
 
 .menu-details {
-    padding: 0.5rem 0; /* Minimal padding */
+    padding: 0.5rem 0;
+    /* Minimal padding */
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -533,7 +584,8 @@ img {
     justify-content: space-between;
     align-items: baseline;
     margin-bottom: 0.5rem;
-    border-bottom: none; /* Cleaner */
+    border-bottom: none;
+    /* Cleaner */
     padding-bottom: 0;
 }
 
@@ -568,7 +620,8 @@ img {
 }
 
 .gallery-item {
-    height: 500px; /* Taller gallery */
+    height: 500px;
+    /* Taller gallery */
     overflow: hidden;
     position: relative;
 }
@@ -587,7 +640,7 @@ img {
 /* Reservation Section */
 .reservation {
     padding: 12rem 0;
-    background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('/assets/tavolipm.jpg');
+    background-image: linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url('/assets/tavolipm.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -676,20 +729,21 @@ img {
     .desktop-only {
         display: none !important;
     }
-    
+
     .mobile-only {
         display: inline-block !important;
         margin-top: 1.5rem;
     }
 
     .container {
-        padding: 0 1.5rem; /* Better padding for mobile */
+        padding: 0 1.5rem;
+        /* Better padding for mobile */
     }
 
     .hero-title {
         font-size: 3.5rem;
     }
-    
+
     .nav-links {
         display: flex;
         position: fixed;
@@ -707,7 +761,7 @@ img {
         pointer-events: none;
         z-index: 1000;
     }
-    
+
     .nav-links.mobile-open {
         transform: translateY(0);
         opacity: 1;
@@ -715,11 +769,12 @@ img {
     }
 
     .nav-links a {
-        font-size: 1.8rem; /* Slightly smaller to fit better */
+        font-size: 1.8rem;
+        /* Slightly smaller to fit better */
         margin: 1.2rem 0;
         color: var(--text-color);
     }
-    
+
     /* Make "PRENOTA" more visible on mobile menu */
     .nav-links .btn-link {
         background-color: var(--accent-red);
@@ -735,48 +790,56 @@ img {
     .gallery-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .pizza-mese-container {
         flex-direction: column-reverse;
         padding: 0;
         gap: 3rem;
     }
-    
+
     /* Override for specific reversed sections on mobile to keep column-reverse */
     .bottega-container-reverse {
-        flex-direction: column !important; /* Changed to column for Text -> Image -> Button flow */
+        flex-direction: column !important;
+        /* Changed to column for Text -> Image -> Button flow */
     }
 
     /* Center content on mobile and fix overflow */
     .pizza-mese-content {
-        min-width: 0; /* Allow shrinking */
+        min-width: 0;
+        /* Allow shrinking */
         width: 100%;
         text-align: center;
     }
-    
+
     .pizza-mese-image {
-        min-width: 0; /* Allow shrinking */
+        min-width: 0;
+        /* Allow shrinking */
         width: 100%;
     }
 
     .menu-grid {
-        grid-template-columns: 1fr; /* Single column on mobile */
+        grid-template-columns: 1fr;
+        /* Single column on mobile */
     }
-    
+
     .hamburger {
         display: block;
         z-index: 1001;
         position: relative;
     }
-    
+
     .section-title {
         font-size: 2.8rem;
     }
-    
-    .about, .pizza-mese, .menu, .reservation {
-        padding: 5rem 0; /* Reduced padding on mobile */
+
+    .about,
+    .pizza-mese,
+    .menu,
+    .reservation {
+        padding: 5rem 0;
+        /* Reduced padding on mobile */
     }
-    
+
     .hero-content {
         padding: 0 1rem;
     }
