@@ -339,6 +339,11 @@ img {
     transform: rotate(0deg) scale(1.02);
 }
 
+/* Helper for reversed layout on desktop */
+.bottega-container-reverse {
+    flex-direction: row-reverse;
+}
+
 .badge {
     display: inline-block;
     background-color: var(--accent-red);
@@ -619,6 +624,11 @@ img {
         gap: 3rem;
     }
     
+    /* Override for specific reversed sections on mobile to keep column-reverse */
+    .bottega-container-reverse {
+        flex-direction: column-reverse;
+    }
+
     /* Center content on mobile and fix overflow */
     .pizza-mese-content {
         min-width: 0; /* Allow shrinking */
