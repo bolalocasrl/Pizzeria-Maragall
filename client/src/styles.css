@@ -384,7 +384,7 @@ img {
 .hero-content {
     max-width: 1000px;
     padding: 0 1.5rem;
-    opacity: 0;
+    opacity: 1;
     color: white;
 }
 
