@@ -843,4 +843,10 @@ img {
     .hero-content {
         padding: 0 1rem;
     }
+
+    .hero {
+        background-attachment: scroll; /* Fix for mobile pixelation/zoom */
+        background-position: center;
+        height: 100vh; /* Ensure full height on mobile */
+    }
 }
