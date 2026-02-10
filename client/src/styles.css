@@ -180,6 +180,7 @@ img {
 .nav-links {
     display: flex;
     gap: 3rem; /* More spacing between links */
+    align-items: center; /* Ensure vertical centering */
 }
 
 .nav-links a {
