@@ -154,24 +154,15 @@ img {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 0; /* More padding initially */
+    padding: 0.8rem 0; /* Reduced padding */
     z-index: 1000;
-    transition: all 0.5s ease;
+    background-color: white; /* Always white */
+    box-shadow: 0 2px 20px rgba(0,0,0,0.05); /* Constant shadow */
 }
 
+/* Remove or simplify .scrolled as it's now the default state */
 .navbar.scrolled {
-    background-color: rgba(255, 255, 255, 0.98);
-    padding: 1.2rem 0;
-    backdrop-filter: blur(12px);
-    box-shadow: 0 2px 20px rgba(0,0,0,0.03);
-}
-
-.navbar.scrolled .nav-links a {
-    color: var(--text-color);
-}
-
-.navbar.scrolled .logo-text {
-    color: var(--text-color);
+    /* No changes on scroll needed for background/padding anymore */
 }
 
 .nav-container {
@@ -186,10 +177,6 @@ img {
     transition: height 0.3s ease;
 }
 
-.navbar.scrolled .logo img {
-    height: 45px;
-}
-
 .nav-links {
     display: flex;
     gap: 3rem; /* More spacing between links */
@@ -199,7 +186,7 @@ img {
     font-family: var(--font-heading);
     font-size: 0.9rem;
     letter-spacing: 2px;
-    color: white;
+    color: var(--text-color); /* Always dark color */
     font-weight: 500;
     position: relative;
     opacity: 0.9;
@@ -215,10 +202,7 @@ img {
     display: none;
     cursor: pointer;
     font-size: 1.5rem;
-    color: white; /* Default state on hero */
-}
-.navbar.scrolled .hamburger {
-    color: var(--text-color);
+    color: var(--text-color); /* Always dark color */
 }
 
 
