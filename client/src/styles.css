@@ -562,8 +562,22 @@ img {
     letter-spacing: 1px;
 }
 
+/* Responsive Utility Classes */
+.mobile-only {
+    display: none;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
+    .desktop-only {
+        display: none !important;
+    }
+    
+    .mobile-only {
+        display: inline-block !important;
+        margin-top: 1.5rem;
+    }
+
     .container {
         padding: 0 1.5rem; /* Better padding for mobile */
     }
@@ -626,7 +640,7 @@ img {
     
     /* Override for specific reversed sections on mobile to keep column-reverse */
     .bottega-container-reverse {
-        flex-direction: column-reverse;
+        flex-direction: column !important; /* Changed to column for Text -> Image -> Button flow */
     }
 
     /* Center content on mobile and fix overflow */
