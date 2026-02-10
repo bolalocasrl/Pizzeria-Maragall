@@ -270,6 +270,14 @@ img {
     color: var(--accent-red) !important;
 }
 
+.lang-flag {
+    width: 20px;
+    height: auto;
+    object-fit: contain;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 /* Mobile adjustments for lang selector */
 @media (max-width: 768px) {
     .lang-dropdown {

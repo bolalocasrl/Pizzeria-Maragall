@@ -268,7 +268,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'it': '🇮🇹',
         'en': '🇬🇧',
         'es': '🇪🇸',
-        'ca': '🏴󠁥󠁳󠁣󠁴󠁿',
+        'ca': '<img src="/assets/cat_flag.jpg" class="lang-flag" alt="Català">',
         'fr': '🇫🇷'
     };
     
