@@ -154,7 +154,7 @@ img {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 0.8rem 0; /* Reduced padding */
+    padding: 0.5rem 0; /* Reduced padding further */
     z-index: 1000;
     background-color: white; /* Always white */
     box-shadow: 0 2px 20px rgba(0,0,0,0.05); /* Constant shadow */
