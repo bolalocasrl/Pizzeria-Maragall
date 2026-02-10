@@ -1,277 +1,501 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizzeria Maragall | Autentica Pizza Italiana a Barcellona</title>
-    <meta name="description" content="Scopri Pizzeria Maragall, autentica pizzeria italiana a Barcellona nel quartiere Sant Andreu. Pizza cotta nel forno a legna, ingredienti freschi e atmosfera accogliente.">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pizzeria Maragall | Autentica Pizza Italiana a Barcellona</title>
+        <meta
+            name="description"
+            content="Scopri Pizzeria Maragall, autentica pizzeria italiana a Barcellona nel quartiere Sant Andreu. Pizza cotta nel forno a legna, ingredienti freschi e atmosfera accogliente."
+        />
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://pizzeriamaragall.com/">
-    <meta property="og:title" content="Pizzeria Maragall | Autentica Pizza Italiana a Barcellona">
-    <meta property="og:description" content="Scopri Pizzeria Maragall, autentica pizzeria italiana a Barcellona nel quartiere Sant Andreu. Pizza cotta nel forno a legna, ingredienti freschi e atmosfera accogliente.">
-    <meta property="og:image" content="/assets/heropm1.jpg">
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://pizzeriamaragall.com/" />
+        <meta
+            property="og:title"
+            content="Pizzeria Maragall | Autentica Pizza Italiana a Barcellona"
+        />
+        <meta
+            property="og:description"
+            content="Scopri Pizzeria Maragall, autentica pizzeria italiana a Barcellona nel quartiere Sant Andreu. Pizza cotta nel forno a legna, ingredienti freschi e atmosfera accogliente."
+        />
+        <meta property="og:image" content="/assets/heropm1.jpg" />
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://pizzeriamaragall.com/">
-    <meta property="twitter:title" content="Pizzeria Maragall | Autentica Pizza Italiana a Barcellona">
-    <meta property="twitter:description" content="Scopri Pizzeria Maragall, autentica pizzeria italiana a Barcellona nel quartiere Sant Andreu. Pizza cotta nel forno a legna, ingredienti freschi e atmosfera accogliente.">
-    <meta property="twitter:image" content="/assets/heropm1.jpg">
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    
-    <!-- Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://pizzeriamaragall.com/" />
+        <meta
+            property="twitter:title"
+            content="Pizzeria Maragall | Autentica Pizza Italiana a Barcellona"
+        />
+        <meta
+            property="twitter:description"
+            content="Scopri Pizzeria Maragall, autentica pizzeria italiana a Barcellona nel quartiere Sant Andreu. Pizza cotta nel forno a legna, ingredienti freschi e atmosfera accogliente."
+        />
+        <meta property="twitter:image" content="/assets/heropm1.jpg" />
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="/src/styles.css">
-</head>
-<body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="#" class="logo">
-                <img src="/assets/logopm.png" alt="Pizzeria Maragall Logo">
-            </a>
-            <div class="nav-links">
-                <a href="#about">CHI SIAMO</a>
-                <a href="#pizza-mese">SPECIALITÀ</a>
-                <a href="#menu">IL MENU</a>
-                <a href="#contact" class="btn-link">PRENOTA</a>
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Icons -->
+        <script src="https://unpkg.com/lucide@latest"></script>
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="/src/styles.css" />
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="container nav-container">
+                <a href="#" class="logo">
+                    <img
+                        src="/assets/logopm.png"
+                        alt="Pizzeria Maragall Logo"
+                    />
+                </a>
+                <div class="nav-links">
+                    <a href="#about">CHI SIAMO</a>
+                    <a href="#pizza-mese">SPECIALITÀ</a>
+                    <a href="#menu">IL MENU</a>
+                    <a href="#contact" class="btn-link">PRENOTA</a>
+                    
+                    <!-- Language Dropdown -->
+                    <div class="lang-dropdown">
+                        <button class="lang-btn" aria-label="Seleziona lingua">
+                            🇮🇹
+                            <i data-lucide="chevron-down" class="chevron"></i>
+                        </button>
+                        <div class="lang-menu">
+                            <a href="#" data-lang="it">🇮🇹 Italiano</a>
+                            <a href="#" data-lang="en">🇬🇧 English</a>
+                            <a href="#" data-lang="es">🇪🇸 Español</a>
+                            <a href="#" data-lang="ca">🏴󠁥󠁳󠁣󠁴󠁿 Català</a>
+                            <a href="#" data-lang="fr">🇫🇷 Français</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hamburger">
+                    <i data-lucide="menu"></i>
+                </div>
             </div>
-            <div class="hamburger">
-                <i data-lucide="menu"></i>
-            </div>
-        </div>
-    </nav>
+        </nav>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-content">
-            <h1 class="hero-logo-text">Pizzeria Maragall</h1>
-            <p class="hero-subtitle">PIZZA & CUCINA ITALIANA – BARCELONA</p>
-            <div class="hero-btns">
-                <a href="#contact" class="btn">PRENOTA UN TAVOLO</a>
-                <a href="#menu" class="btn btn-outline">SCOPRI IL MENU</a>
+        <!-- Hero Section -->
+        <header class="hero">
+            <div class="hero-content">
+                <h1 class="hero-logo-text">Pizzeria Maragall</h1>
+                <p class="hero-subtitle" data-key="hero_subtitle">PIZZA & CUCINA ITALIANA – BARCELONA</p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn" data-key="hero_book">PRENOTA UN TAVOLO</a>
+                    <a href="#menu" class="btn btn-outline" data-key="hero_menu">SCOPRI IL MENU</a>
+                </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <!-- About Section -->
-    <section id="about" class="about fade-in-section">
-        <div class="container">
-            <h2 class="section-title">CHI SIAMO</h2>
-            <p class="section-subtitle">Passione per la pizza e per le persone</p>
-            
-            <div class="about-text">
-                <p>
-                    Più di una semplice pizzeria, siamo una famiglia. La nostra squadra lavora ogni giorno con un unico obiettivo: 
-                    farvi sentire a casa. Crediamo che il cibo sia condivisione e gioia. In un'atmosfera calda e informale, 
-                    tipica delle pizzerie di quartiere italiane, vi accogliamo con il sorriso e con la passione di chi ama ciò che fa. 
-                    Vieni a trovarci e diventa parte della nostra storia.
+        <!-- About Section -->
+        <section id="about" class="about fade-in-section">
+            <div class="container">
+                <h2 class="section-title" data-key="about_title">CHI SIAMO</h2>
+                <p class="section-subtitle" data-key="about_subtitle">
+                    Passione per la pizza e per le persone
+                </p>
+
+                <div class="about-text">
+                    <p data-key="about_text">
+                        Più di una semplice pizzeria, siamo una famiglia. La
+                        nostra squadra lavora ogni giorno con un unico
+                        obiettivo: farvi sentire a casa. Crediamo che il cibo
+                        sia condivisione e gioia. In un'atmosfera calda e
+                        informale, tipica delle pizzerie di quartiere italiane,
+                        vi accogliamo con il sorriso e con la passione di chi
+                        ama ciò che fa. Vieni a trovarci e diventa parte della
+                        nostra storia.
+                    </p>
+                </div>
+
+                <div class="about-hours">
+                    <h3 data-key="about_hours">ORARI</h3>
+                    <p><strong data-key="hours_week">Lunedì - Venerdì:</strong> 20:00 - 00:00</p>
+                    <p>
+                        <strong data-key="hours_weekend">Sabato - Domenica:</strong> 13:30 - 16:30 |
+                        20:00 - 00:00
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pizza del Mese (Priority Section) -->
+        <section id="pizza-mese" class="pizza-mese fade-in-section">
+            <div class="container">
+                <div class="pizza-mese-container">
+                    <div class="pizza-mese-content">
+                        <span class="badge" data-key="badge_pizza">🍕 Pizza del Mese</span>
+                        <h2>PIZZA MARAGALL</h2>
+                        <p class="pizza-mese-desc" data-key="pizza_desc">
+                            La nostra firma. Una combinazione perfetta di sapori
+                            equilibrati che ha conquistato centinaia di clienti.
+                            Ingredienti selezionati, base croccante e un tocco
+                            segreto dello chef. Vieni a scoprire perché è la
+                            preferita del quartiere.
+                        </p>
+                        <a href="#contact" class="btn" data-key="btn_try">PROVALA ORA</a>
+                    </div>
+                    <div class="pizza-mese-image">
+                        <img
+                            src="/assets/heropm.jpg"
+                            alt="Pizza Maragall speciale del mese con ingredienti freschi, cotta nel forno a legna"
+                            loading="lazy"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="menu fade-in-section">
+            <div class="container">
+                <h2 class="section-title" data-key="menu_title">
+                    LE NOSTRE <span class="text-accent-red">SELEZIONI</span>
+                </h2>
+                <p class="section-subtitle" data-key="menu_subtitle">
+                    Cotte in forno a legna, sottili e croccanti
+                </p>
+
+                <div class="menu-grid">
+                    <!-- Item 1 -->
+                    <div class="menu-item">
+                        <div class="menu-img-container">
+                            <img
+                                src="/assets/sel1.jpg"
+                                alt="Pizza classica Margherita con basilico fresco e mozzarella fior di latte"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div class="menu-details">
+                            <div class="menu-header">
+                                <h3 class="menu-name">Margherita Classica</h3>
+                                <span class="menu-price">€9.50</span>
+                            </div>
+                            <p class="menu-desc" data-key="menu_1_desc">
+                                Pomodoro San Marzano, Mozzarella fior di latte,
+                                Basilico fresco. La regina della tradizione.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="menu-item">
+                        <div class="menu-img-container">
+                            <img
+                                src="/assets/sel2.jpg"
+                                alt="Pizza Prosciutto e Funghi con ingredienti di alta qualità"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div class="menu-details">
+                            <div class="menu-header">
+                                <h3 class="menu-name">Prosciutto e Funghi</h3>
+                                <span class="menu-price">€11.50</span>
+                            </div>
+                            <p class="menu-desc" data-key="menu_2_desc">
+                                Pomodoro, Mozzarella, Prosciutto cotto di alta
+                                qualità e funghi freschi.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="menu-item">
+                        <div class="menu-img-container">
+                            <img
+                                src="/assets/sel3.jpg"
+                                alt="Pizza Porchetta romana con patate al forno e mozzarella"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div class="menu-details">
+                            <div class="menu-header">
+                                <h3 class="menu-name">La Porchetta</h3>
+                                <span class="menu-price">€12.50</span>
+                            </div>
+                            <p class="menu-desc" data-key="menu_3_desc">
+                                Una delizia romana: Porchetta arrosto aromatica,
+                                Mozzarella e patate al forno.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 (New) -->
+                    <div class="menu-item">
+                        <div class="menu-img-container">
+                            <img
+                                src="/assets/cheesmisu.webp"
+                                alt="Dolce Cheesmisu, dessert cremoso che unisce cheesecake e tiramisù"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div class="menu-details">
+                            <div class="menu-header">
+                                <h3 class="menu-name">Cheesmisu</h3>
+                                <span class="menu-price">€6.50</span>
+                            </div>
+                            <p class="menu-desc" data-key="menu_4_desc">
+                                Un mix allettante tra cheesecake e tiramisù,
+                                creato dallo chef Fabrizio per chi ama i dolci
+                                italiani con un tocco innovativo: cremoso,
+                                delicato e irresistibile.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    style="
+                        text-align: center;
+                        margin-top: 4rem;
+                        display: flex;
+                        justify-content: center;
+                        gap: 1rem;
+                        flex-wrap: wrap;
+                    "
+                >
+                    <a
+                        href="/assets/English.pdf"
+                        target="_blank"
+                        class="btn btn-secondary"
+                        >Menu (English)</a
+                    >
+                    <a
+                        href="/assets/CatyCast.pdf"
+                        target="_blank"
+                        class="btn btn-secondary"
+                        >Menu (Català / Castellano)</a
+                    >
+                </div>
+            </div>
+        </section>
+
+        <!-- Pizza para llevar Section -->
+        <section
+            id="takeaway"
+            class="menu fade-in-section"
+            style="background-color: white; padding: 6rem 0"
+        >
+            <div class="container" style="text-align: center">
+                <h2 class="section-title" data-key="takeaway_title">🍕 Pizza para llevar</h2>
+                <p class="section-subtitle" data-key="takeaway_subtitle">Gustala comodamente a casa tua</p>
+
+                <div
+                    style="
+                        display: flex;
+                        justify-content: center;
+                        gap: 2rem;
+                        flex-wrap: wrap;
+                        margin-top: 2rem;
+                    "
+                >
+                    <a href="tel:+34935027214" class="btn" data-key="btn_call">Chiama e ordina</a>
+                    <a
+                        href="https://glovoapp.com/es/es/barcelona/stores/pizzeria-maragall-barcelona"
+                        target="_blank"
+                        class="btn btn-outline"
+                        style="
+                            border-color: var(--accent-red);
+                            color: var(--accent-red);
+                        "
+                        data-key="btn_glovo">Ordina su Glovo</a
+                    >
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery fade-in-section">
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img
+                        src="/assets/teampm.jpg"
+                        alt="Il team di Pizzeria Maragall al lavoro"
+                        loading="lazy"
+                    />
+                </div>
+                <div class="gallery-item">
+                    <img
+                        src="/assets/terrazzapm.jpg"
+                        alt="Terrazza esterna accogliente di Pizzeria Maragall a Barcellona"
+                        loading="lazy"
+                    />
+                </div>
+            </div>
+        </section>
+
+        <!-- Reservation Section -->
+        <section id="contact" class="reservation fade-in-section">
+            <div class="container">
+                <h2 data-key="book_title">PRENOTA IL TUO TAVOLO</h2>
+                <p data-key="book_desc">Siamo spesso al completo, consigliamo la prenotazione.</p>
+                <a
+                    href="https://pizzeriamaragall.eatbu.com/?lang=it#reservation"
+                    target="_blank"
+                    class="btn"
+                    data-key="btn_book_now">PRENOTA ORA</a
+                >
+
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <a
+                            href="tel:+34935027214"
+                            style="
+                                display: flex;
+                                align-items: center;
+                                color: inherit;
+                            "
+                        >
+                            <i
+                                data-lucide="phone"
+                                style="
+                                    margin-right: 10px;
+                                    color: var(--accent-red);
+                                "
+                            ></i>
+                            <span>+34 935 02 72 14</span>
+                        </a>
+                    </div>
+                    <div class="contact-item">
+                        <a
+                            href="mailto:pizzeriamaragall@gmail.com"
+                            style="
+                                display: flex;
+                                align-items: center;
+                                color: inherit;
+                            "
+                        >
+                            <i
+                                data-lucide="mail"
+                                style="
+                                    margin-right: 10px;
+                                    color: var(--accent-red);
+                                "
+                            ></i>
+                            <span>pizzeriamaragall@gmail.com</span>
+                        </a>
+                    </div>
+                    <div class="contact-item">
+                        <i
+                            data-lucide="map-pin"
+                            style="margin-right: 10px; color: var(--accent-red)"
+                        ></i>
+                        <a
+                            href="https://www.google.com/maps/place/Pizzeria+Maragall+S.L/@41.4179033,2.1798591,18.68z/data=!4m15!1m8!3m7!1s0x12a4a2d45b999cf7:0x11d525564cc00814!2sCarrer+de+Juan+de+Garay,+8,+Sant+Andreu,+08041+Barcelona!3b1!8m2!3d41.4177154!4d2.1810191!16s%2Fg%2F11cs8h95gy!3m5!1s0x12a4a3a5d1fc76fd:0xfa682292c573e035!8m2!3d41.41762!4d2.18082!16s%2Fg%2F11f9_ly3ml"
+                            target="_blank"
+                            style="color: inherit"
+                        >
+                            <span
+                                >Carrer de Juan de Garay 8, 08041 Barcelona,
+                                Spagna</span
+                            >
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bottega Maragall Section -->
+        <section
+            id="bottega"
+            class="pizza-mese fade-in-section"
+            style="background-color: #fdfcf8"
+        >
+            <div class="container">
+                <div class="pizza-mese-container bottega-container-reverse">
+                    <div class="pizza-mese-content">
+                        <span
+                            class="badge"
+                            style="
+                                background-color: var(--text-color);
+                                color: white;
+                            "
+                            data-key="bottega_badge">NUOVA APERTURA</span
+                        >
+                        <h2>BOTTEGA MARAGALL</h2>
+                        <p class="pizza-mese-desc" data-key="bottega_desc">
+                            Focaccia italiana e vini locali. Un'atmosfera intima
+                            e accogliente con una selezione accurata di vini di
+                            alta qualità. Il luogo ideale per un aperitivo
+                            autentico o una cena rilassata.
+                        </p>
+                        <a
+                            href="https://www.google.com/maps/place/LA+BOTTEGA+MARAGALL+-WINE+BAR/@41.4177154,2.1784388,17z/data=!3m1!4b1!4m6!3m5!1s0x12a4a3bd88658215:0x216492e711686688!8m2!3d41.4177154!4d2.1810191!16s%2Fg%2F11xh03f9k5"
+                            target="_blank"
+                            class="btn desktop-only"
+                            style="background-color: var(--text-color)"
+                            data-key="btn_bottega">SCOPRI BOTTEGA MARAGALL</a
+                        >
+                    </div>
+                    <div class="pizza-mese-image">
+                        <img
+                            src="/assets/sellbm.jpg"
+                            alt="Bottega Maragall wine bar con focacce italiane e vini"
+                            loading="lazy"
+                            style="transform: rotate(1deg)"
+                        />
+                    </div>
+                    <a
+                        href="https://www.google.com/maps/place/LA+BOTTEGA+MARAGALL+-WINE+BAR/@41.4177154,2.1784388,17z/data=!3m1!4b1!4m6!3m5!1s0x12a4a3bd88658215:0x216492e711686688!8m2!3d41.4177154!4d2.1810191!16s%2Fg%2F11xh03f9k5"
+                        target="_blank"
+                        class="btn mobile-only"
+                        style="background-color: var(--text-color)"
+                        data-key="btn_bottega">SCOPRI BOTTEGA MARAGALL</a
+                    >
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-logo">#PizzeriaMaragall</div>
+
+                <div class="social-icons">
+                    <a
+                        href="https://www.instagram.com/pizzeriamaragall/"
+                        target="_blank"
+                        ><i data-lucide="instagram"></i
+                    ></a>
+                    <img
+                        src="/assets/logopm.png"
+                        alt="Pizzeria Maragall"
+                        style="
+                            height: 50px;
+                            width: auto;
+                            opacity: 0.9;
+                            margin: 0 1rem;
+                        "
+                    />
+                    <a
+                        href="https://www.facebook.com/pages/Pizzeria-Maragall/320753815391331"
+                        target="_blank"
+                        ><i data-lucide="facebook"></i
+                    ></a>
+                </div>
+
+                <p class="copyright">
+                    &copy; 2025 Pizzeria Maragall S.L. - Barcellona.
                 </p>
             </div>
+        </footer>
 
-            <div class="about-hours">
-                <h3>ORARI</h3>
-                <p><strong>Lunedì - Venerdì:</strong> 20:00 - 00:00</p>
-                <p><strong>Sabato - Domenica:</strong> 13:30 - 16:30 | 20:00 - 00:00</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pizza del Mese (Priority Section) -->
-    <section id="pizza-mese" class="pizza-mese fade-in-section">
-        <div class="container">
-            <div class="pizza-mese-container">
-                <div class="pizza-mese-content">
-                    <span class="badge">🍕 Pizza del Mese</span>
-                    <h2>PIZZA MARAGALL</h2>
-                    <p class="pizza-mese-desc">
-                        La nostra firma. Una combinazione perfetta di sapori equilibrati che ha conquistato 
-                        centinaia di clienti. Ingredienti selezionati, base croccante e un tocco segreto dello chef.
-                        Vieni a scoprire perché è la preferita del quartiere.
-                    </p>
-                    <a href="#contact" class="btn">PROVALA ORA</a>
-                </div>
-                <div class="pizza-mese-image">
-                    <img src="/assets/heropm.jpg" alt="Pizza Maragall speciale del mese con ingredienti freschi, cotta nel forno a legna" loading="lazy">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Menu Section -->
-    <section id="menu" class="menu fade-in-section">
-        <div class="container">
-            <h2 class="section-title">LE NOSTRE <span class="text-accent-red">SELEZIONI</span></h2>
-            <p class="section-subtitle">Cotte in forno a legna, sottili e croccanti</p>
-
-            <div class="menu-grid">
-                <!-- Item 1 -->
-                <div class="menu-item">
-                    <div class="menu-img-container">
-                        <img src="/assets/sel1.jpg" alt="Pizza classica Margherita con basilico fresco e mozzarella fior di latte" loading="lazy">
-                    </div>
-                    <div class="menu-details">
-                        <div class="menu-header">
-                            <h3 class="menu-name">Margherita Classica</h3>
-                            <span class="menu-price">€9.50</span>
-                        </div>
-                        <p class="menu-desc">Pomodoro San Marzano, Mozzarella fior di latte, Basilico fresco. La regina della tradizione.</p>
-                    </div>
-                </div>
-
-                <!-- Item 2 -->
-                <div class="menu-item">
-                    <div class="menu-img-container">
-                        <img src="/assets/sel2.jpg" alt="Pizza Prosciutto e Funghi con ingredienti di alta qualità" loading="lazy">
-                    </div>
-                    <div class="menu-details">
-                        <div class="menu-header">
-                            <h3 class="menu-name">Prosciutto e Funghi</h3>
-                            <span class="menu-price">€11.50</span>
-                        </div>
-                        <p class="menu-desc">Pomodoro, Mozzarella, Prosciutto cotto di alta qualità e funghi freschi.</p>
-                    </div>
-                </div>
-                
-                <!-- Item 3 -->
-                 <div class="menu-item">
-                    <div class="menu-img-container">
-                        <img src="/assets/sel3.jpg" alt="Pizza Porchetta romana con patate al forno e mozzarella" loading="lazy">
-                    </div>
-                    <div class="menu-details">
-                        <div class="menu-header">
-                            <h3 class="menu-name">La Porchetta</h3>
-                            <span class="menu-price">€12.50</span>
-                        </div>
-                        <p class="menu-desc">Una delizia romana: Porchetta arrosto aromatica, Mozzarella e patate al forno.</p>
-                    </div>
-                </div>
-
-                <!-- Item 4 (New) -->
-                <div class="menu-item">
-                    <div class="menu-img-container">
-                        <img src="/assets/cheesmisu.webp" alt="Dolce Cheesmisu, dessert cremoso che unisce cheesecake e tiramisù" loading="lazy">
-                    </div>
-                    <div class="menu-details">
-                        <div class="menu-header">
-                            <h3 class="menu-name">Cheesmisu</h3>
-                            <span class="menu-price">€6.50</span>
-                        </div>
-                        <p class="menu-desc">Un mix allettante tra cheesecake e tiramisù, creato dallo chef Fabrizio per chi ama i dolci italiani con un tocco innovativo: cremoso, delicato e irresistibile.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div style="text-align: center; margin-top: 4rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-                <a href="#" class="btn btn-secondary">Menu (Català / Castellano)</a>
-                <a href="#" class="btn btn-secondary">Menu (English)</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pizza para llevar Section -->
-    <section id="takeaway" class="menu fade-in-section" style="background-color: white; padding: 6rem 0;">
-        <div class="container" style="text-align: center;">
-            <h2 class="section-title">🍕 Pizza para llevar</h2>
-            <p class="section-subtitle">Gustala comodamente a casa tua</p>
-            
-            <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-top: 2rem;">
-                <a href="tel:+34935027214" class="btn">Chiama e ordina</a>
-                <a href="https://glovoapp.com/es/es/barcelona/stores/pizzeria-maragall-barcelona" target="_blank" class="btn btn-outline" style="border-color: var(--accent-red); color: var(--accent-red);">Ordina su Glovo</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery fade-in-section">
-        <div class="gallery-grid">
-            <div class="gallery-item">
-                <img src="/assets/teampm.jpg" alt="Il team di Pizzeria Maragall al lavoro" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="/assets/terrazzapm.jpg" alt="Terrazza esterna accogliente di Pizzeria Maragall a Barcellona" loading="lazy">
-            </div>
-        </div>
-    </section>
-
-    <!-- Reservation Section -->
-    <section id="contact" class="reservation fade-in-section">
-        <div class="container">
-            <h2>PRENOTA IL TUO TAVOLO</h2>
-            <p>Siamo spesso al completo, consigliamo la prenotazione.</p>
-            <a href="https://pizzeriamaragall.eatbu.com/?lang=it#reservation" target="_blank" class="btn">PRENOTA ORA</a>
-            
-            <div class="contact-details">
-                <div class="contact-item">
-                    <a href="tel:+34935027214" style="display: flex; align-items: center; color: inherit;">
-                        <i data-lucide="phone" style="margin-right:10px; color:var(--accent-red);"></i>
-                        <span>+34 935 02 72 14</span>
-                    </a>
-                </div>
-                <div class="contact-item">
-                    <a href="mailto:pizzeriamaragall@gmail.com" style="display: flex; align-items: center; color: inherit;">
-                        <i data-lucide="mail" style="margin-right:10px; color:var(--accent-red);"></i>
-                        <span>pizzeriamaragall@gmail.com</span>
-                    </a>
-                </div>
-                <div class="contact-item">
-                    <i data-lucide="map-pin" style="margin-right:10px; color:var(--accent-red);"></i>
-                    <a href="https://www.google.com/maps/place/Pizzeria+Maragall+S.L/@41.4179033,2.1798591,18.68z/data=!4m15!1m8!3m7!1s0x12a4a2d45b999cf7:0x11d525564cc00814!2sCarrer+de+Juan+de+Garay,+8,+Sant+Andreu,+08041+Barcelona!3b1!8m2!3d41.4177154!4d2.1810191!16s%2Fg%2F11cs8h95gy!3m5!1s0x12a4a3a5d1fc76fd:0xfa682292c573e035!8m2!3d41.41762!4d2.18082!16s%2Fg%2F11f9_ly3ml" target="_blank" style="color: inherit;">
-                        <span>Carrer de Juan de Garay 8, 08041 Barcelona, Spagna</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Bottega Maragall Section -->
-    <section id="bottega" class="pizza-mese fade-in-section" style="background-color: #fdfcf8;">
-        <div class="container">
-            <div class="pizza-mese-container bottega-container-reverse">
-                <div class="pizza-mese-content">
-                    <span class="badge" style="background-color: var(--text-color); color: white;">NUOVA APERTURA</span>
-                    <h2>BOTTEGA MARAGALL</h2>
-                    <p class="pizza-mese-desc">
-                        Focaccia italiana e vini locali. Un'atmosfera intima e accogliente con una selezione accurata di vini di alta qualità. Il luogo ideale per un aperitivo autentico o una cena rilassata.
-                    </p>
-                    <a href="https://www.google.com/maps/place/LA+BOTTEGA+MARAGALL+-WINE+BAR/@41.4177154,2.1784388,17z/data=!3m1!4b1!4m6!3m5!1s0x12a4a3bd88658215:0x216492e711686688!8m2!3d41.4177154!4d2.1810191!16s%2Fg%2F11xh03f9k5" target="_blank" class="btn desktop-only" style="background-color: var(--text-color);">SCOPRI BOTTEGA MARAGALL</a>
-                </div>
-                <div class="pizza-mese-image">
-                    <img src="/assets/sellbm.jpg" alt="Bottega Maragall wine bar con focacce italiane e vini" loading="lazy" style="transform: rotate(1deg);">
-                </div>
-                <a href="https://www.google.com/maps/place/LA+BOTTEGA+MARAGALL+-WINE+BAR/@41.4177154,2.1784388,17z/data=!3m1!4b1!4m6!3m5!1s0x12a4a3bd88658215:0x216492e711686688!8m2!3d41.4177154!4d2.1810191!16s%2Fg%2F11xh03f9k5" target="_blank" class="btn mobile-only" style="background-color: var(--text-color);">SCOPRI BOTTEGA MARAGALL</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-logo">#PizzeriaMaragall</div>
-            
-            <div class="social-icons">
-                <a href="https://www.instagram.com/pizzeriamaragall/" target="_blank"><i data-lucide="instagram"></i></a>
-                <img src="/assets/logopm.png" alt="Pizzeria Maragall" style="height: 50px; width: auto; opacity: 0.9; margin: 0 1rem;">
-                <a href="https://www.facebook.com/pages/Pizzeria-Maragall/320753815391331" target="_blank"><i data-lucide="facebook"></i></a>
-            </div>
-
-            <p class="copyright">&copy; 2025 Pizzeria Maragall S.L. - Barcellona.</p>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="/src/script.js"></script>
-    <script>
-        // Initialize Lucide Icons
-        lucide.createIcons();
-    </script>
-</body>
+        <!-- Scripts -->
+        <script src="/src/script.js"></script>
+        <script>
+            // Initialize Lucide Icons
+            lucide.createIcons();
+        </script>
+    </body>
 </html>
