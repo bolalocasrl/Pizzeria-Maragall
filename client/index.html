@@ -54,7 +54,7 @@
         <nav class="navbar">
             <div class="container nav-container">
                 <div class="nav-left">
-                    <a href="#contact" class="btn-link">PRENOTA</a>
+                    <a href="#menu" class="menu-link">IL MENU</a>
                 </div>
                 <a href="#" class="logo">
                     <img
@@ -63,7 +63,7 @@
                     />
                 </a>
                 <div class="nav-links">
-                    <a href="#menu">IL MENU</a>
+                    <a href="#contact" class="btn-link">PRENOTA</a>
 
                     <!-- Language Dropdown -->
                     <div class="lang-dropdown">
@@ -88,13 +88,14 @@
 
         <!-- Hero Section -->
         <header class="hero">
-            <div class="hero-content">
-                <h1 class="hero-logo-text">Pizzeria Maragall</h1>
-                <p class="hero-subtitle" data-key="hero_subtitle">PIZZA & CUCINA ITALIANA – BARCELONA</p>
-                <div class="hero-hours" style="margin-top: 1.5rem; color: white; font-family: 'Open Sans', sans-serif; letter-spacing: 0.05em; background: rgba(0,0,0,0.45); backdrop-filter: blur(6px); border: 1px solid rgba(255,255,255,0.15); padding: 1.2rem 2rem; display: inline-block; border-radius: 4px;">
-                    <p style="font-size: 0.75rem; text-transform: uppercase; opacity: 0.7; margin-bottom: 0.6rem; letter-spacing: 0.15em;">Orari</p>
-                    <p style="font-size: 1rem; margin: 0.3rem 0;"><strong>Lunedì - Venerdì:</strong> 20:00 - 00:00</p>
-                    <p style="font-size: 1rem; margin: 0.3rem 0;"><strong>Sabato - Domenica:</strong> 13:30 - 16:30 | 20:00 - 00:00</p>
+            <div class="hero-content" style="background: rgba(0, 0, 0, 0.5); padding: 3rem 2rem; border-radius: 8px; backdrop-filter: blur(4px);">
+                <h1 class="hero-logo-text" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">Pizzeria Maragall</h1>
+                <p class="hero-subtitle" data-key="hero_subtitle" style="text-shadow: 1px 1px 3px rgba(0,0,0,0.8); font-weight: 600;">PIZZA & CUCINA ITALIANA – BARCELONA</p>
+                <a href="https://www.google.com/maps/place/Pizzeria+Maragall+S.L/@41.4179033,2.1798591,18.68z" target="_blank" class="btn" style="display: block; width: fit-content; margin: 0 auto 1.5rem auto; padding: 0.8rem 2.5rem; font-size: 1rem; background-color: var(--accent-red); color: white !important; border: 2px solid white; transition: all 0.3s ease;">📍 MAPPA</a>
+                <div class="hero-hours" style="margin-top: 1.5rem; color: white; font-family: 'Open Sans', sans-serif; letter-spacing: 0.05em; background: rgba(0,0,0,0.6); backdrop-filter: blur(6px); border: 1px solid rgba(255,255,255,0.3); padding: 1.2rem 2rem; display: inline-block; border-radius: 4px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+                    <p style="font-size: 0.85rem; text-transform: uppercase; opacity: 0.9; margin-bottom: 0.6rem; letter-spacing: 0.15em; font-weight: 600;">Orari</p>
+                    <p style="font-size: 1.05rem; margin: 0.3rem 0; text-shadow: 1px 1px 2px rgba(0,0,0,0.8);"><strong>Lunedì - Venerdì:</strong> 20:00 - 00:00</p>
+                    <p style="font-size: 1.05rem; margin: 0.3rem 0; text-shadow: 1px 1px 2px rgba(0,0,0,0.8);"><strong>Sabato - Domenica:</strong> 13:30 - 16:30 | 20:00 - 00:00</p>
                 </div>
             </div>
         </header>
@@ -255,10 +256,9 @@
                         flex-wrap: wrap;
                     "
                 >
-                    <a
-                        <a href="/assets/English.pdf" target="_blank" class="btn" style="background-color: #2d7a3a; border-color: #2d7a3a; color: white;">Menu (English)</a>
-                        <a href="/assets/CatyCast.pdf" target="_blank" class="btn" style="background-color: white; border: 2px solid #ccc; color: #333;">Menu (Català)</a>
-                        <a href="/assets/CatyCast.pdf" target="_blank" class="btn" style="background-color: #c8102e; border-color: #c8102e; color: white;">Menu (Castellano)</a>
+                    <a href="/assets/English.pdf" target="_blank" class="btn" style="background-color: var(--accent-green); border-color: var(--accent-green); color: white;">Menu (English)</a>
+                    <a href="/assets/CatyCast.pdf" target="_blank" class="btn" style="background-color: white; border: 2px solid var(--text-color); color: var(--text-color);">Menu (Català)</a>
+                    <a href="/assets/CatyCast.pdf" target="_blank" class="btn" style="background-color: var(--accent-red); border-color: var(--accent-red); color: white;">Menu (Castellano)</a>
                 </div>
             </div>
         </section>
@@ -359,7 +359,7 @@
         <section
             id="bottega"
             class="pizza-mese fade-in-section"
-            style="background-color: #fdfcf8"
+            style="background-color: var(--bg-color)"
         >
             <div class="container">
                 <div class="pizza-mese-container bottega-container-reverse">
@@ -421,7 +421,7 @@
                         src="/assets/pizzeria.png"
                         alt="Pizzeria Maragall"
                         style="
-                            height: 65px;
+                            height: 84px;
                             width: auto;
                             opacity: 0.9;
                             margin: 0 1rem;

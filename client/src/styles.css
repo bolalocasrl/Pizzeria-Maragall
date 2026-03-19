@@ -1,21 +1,15 @@
 /* Reset & Base */
 :root {
-    --bg-color: #fdfcf8;
-    /* Even lighter, cleaner off-white */
+    --bg-color: #f4ede4; /* Warm, slightly aged paper/light wood color */
     --text-color: #2a2a2a;
-    /* Sharp charcoal */
-    --accent-red: #d0202a;
-    /* Vibrant Italian Red */
-    --accent-green: #008f40;
-    /* Vibrant Italian Green */
+    --accent-red: #d00d13; /* Extracted from new logo */
+    --accent-green: #106838; /* Extracted from new logo */
     --accent-gold: #e6b800;
     --card-bg: #ffffff;
     --font-heading: 'Fraunces', serif;
-    /* Closest Google Font match to Newgate */
     --font-body: 'Open Sans', sans-serif;
     --transition-speed: 0.4s;
     --shadow-soft: 0 20px 40px rgba(0, 0, 0, 0.03);
-    /* Very subtle, editorial shadow */
     --shadow-hover: 0 30px 60px rgba(0, 0, 0, 0.08);
 }
 
@@ -97,7 +91,8 @@ img {
     border: none;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-    border-radius: 2px;
+    border-radius: 4px; /* Slightly more rounded for warmth */
+    font-weight: 600;
 }
 
 .btn:hover {
@@ -108,9 +103,10 @@ img {
 
 .btn-outline {
     background-color: transparent;
-    border: 2px solid white;
+    border: 2px solid var(--text-color);
     margin-left: 1rem;
     transition: all 0.3s ease;
+    border-radius: 4px;
 }
 
 .btn-outline:hover {
@@ -126,6 +122,7 @@ img {
     color: var(--text-color);
     padding: 0.9rem 2rem;
     font-size: 0.9rem;
+    border-radius: 4px;
 }
 
 .btn-secondary:hover {
@@ -185,7 +182,7 @@ img {
     /* Always white */
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
     /* Constant shadow */
-    height: 70px;
+    height: 60px;
 }
 
 /* Remove or simplify .scrolled as it's now the default state */
@@ -194,14 +191,26 @@ img {
 }
 
 .nav-container {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .logo img {
-    height: 65px;
+    height: 87px;
     /* Slightly larger logo */
     width: auto;
     transition: height 0.3s ease;
@@ -397,17 +406,17 @@ img {
     line-height: 0.9;
     margin-bottom: 2rem;
     text-transform: uppercase;
-    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
     color: white;
 }
 
 .hero-subtitle {
     font-size: 1.5rem;
     margin-bottom: 3.5rem;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 4px;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    opacity: 0.9;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    opacity: 1;
 }
 
 /* About Section */
@@ -430,11 +439,12 @@ img {
 
 .about-hours {
     display: inline-block;
-    border: 1px solid #eee;
+    border: 1px solid #e0d8cd; /* Warmer border */
     padding: 3rem 4rem;
     margin-top: 2rem;
     background-color: white;
-    box-shadow: var(--shadow-soft);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04); /* Softer shadow */
+    border-radius: 4px;
 }
 
 .about-hours h3 {
@@ -446,7 +456,7 @@ img {
 /* Pizza del Mese Section (Priority) */
 .pizza-mese {
     padding: 12rem 0;
-    background-color: #fff;
+    background-color: var(--bg-color); /* Updated to blend seamlessly */
     position: relative;
 }
 
@@ -525,8 +535,8 @@ img {
 /* Menu Section */
 .menu {
     padding: 12rem 0;
-    background-color: #f7f5f0;
-    /* Subtle contrast */
+    background-color: #ffffff;
+    /* Clean white contrast against the warm background */
 }
 
 .menu-grid {
@@ -685,10 +695,10 @@ img {
 /* Footer */
 .footer {
     padding: 6rem 0;
-    background-color: #fdfcf8;
+    background-color: var(--bg-color); /* Updated to use new var */
     text-align: center;
     color: #444;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #e0d8cd; /* Darkened slightly for warm theme */
 }
 
 .footer-logo {
@@ -723,12 +733,34 @@ img {
 }
 
 .btn-link {
-    background-color: var(--accent-red);
-    color: white !important;
-    padding: 0.6rem 1.5rem;
+    display: inline-block;
+    background-color: transparent;
+    color: var(--accent-red) !important;
+    padding: 0.5rem 1.2rem;
     border-radius: 2px;
-    font-weight: 700;
-    letter-spacing: 2px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: 1.5px solid var(--accent-red);
+    font-size: 0.85rem;
+    line-height: 1;
+}
+
+.menu-link {
+    display: inline-block;
+    background-color: transparent;
+    color: var(--accent-green) !important;
+    padding: 0.5rem 1.2rem;
+    border-radius: 2px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: 1.5px solid var(--accent-green);
+    font-size: 0.85rem;
+    line-height: 1;
+}
+
+.menu-link:hover {
+    background-color: var(--accent-green);
+    color: white !important;
 }
 
 .btn-link:hover {
