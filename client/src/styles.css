@@ -178,12 +178,14 @@ img {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 0; /* Reduced padding further */
+    padding: 0.5rem 0;
+    /* Reduced padding further */
     z-index: 1000;
     background-color: white;
     /* Always white */
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
     /* Constant shadow */
+    height: 70px;
 }
 
 /* Remove or simplify .scrolled as it's now the default state */
@@ -195,10 +197,11 @@ img {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
+    height: 100%;
 }
 
 .logo img {
-    height: 80px;
+    height: 65px;
     /* Slightly larger logo */
     width: auto;
     transition: height 0.3s ease;
