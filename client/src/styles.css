@@ -1,9 +1,13 @@
 /* Reset & Base */
 :root {
-    --bg-color: #f4ede4; /* Warm, slightly aged paper/light wood color */
+    --maragall-red: #C1272D;
+    --maragall-green: #006837;
+    --bg-wood-light: #f9f7f2; /* Un bianco caldo che ricorda il legno chiaro */
+    
+    --bg-color: var(--bg-wood-light);
     --text-color: #2a2a2a;
-    --accent-red: #d00d13; /* Extracted from new logo */
-    --accent-green: #106838; /* Extracted from new logo */
+    --accent-red: var(--maragall-red);
+    --accent-green: var(--maragall-green);
     --accent-gold: #e6b800;
     --card-bg: #ffffff;
     --font-heading: 'Fraunces', serif;
@@ -27,6 +31,10 @@ html {
 body {
     font-family: var(--font-body);
     background-color: var(--bg-color);
+    background-image: linear-gradient(rgba(249, 247, 242, 0.95), rgba(249, 247, 242, 0.95)), url('/assets/heropm1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: var(--text-color);
     line-height: 1.9;
     /* Increased for editorial feel */
@@ -423,7 +431,7 @@ img {
 .about {
     padding: 12rem 0;
     /* Generous spacing */
-    background-color: var(--bg-color);
+    background-color: transparent;
     text-align: center;
 }
 
@@ -442,7 +450,7 @@ img {
     border: 1px solid #e0d8cd; /* Warmer border */
     padding: 3rem 4rem;
     margin-top: 2rem;
-    background-color: white;
+    background-color: transparent;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04); /* Softer shadow */
     border-radius: 4px;
 }
@@ -456,7 +464,7 @@ img {
 /* Pizza del Mese Section (Priority) */
 .pizza-mese {
     padding: 12rem 0;
-    background-color: var(--bg-color); /* Updated to blend seamlessly */
+    background-color: transparent; /* Updated to blend seamlessly */
     position: relative;
 }
 
@@ -535,7 +543,7 @@ img {
 /* Menu Section */
 .menu {
     padding: 12rem 0;
-    background-color: #ffffff;
+    background-color: transparent;
     /* Clean white contrast against the warm background */
 }
 
@@ -625,6 +633,7 @@ img {
 /* Gallery Section */
 .gallery {
     padding: 0;
+    background-color: transparent;
 }
 
 .gallery-grid {
@@ -695,7 +704,7 @@ img {
 /* Footer */
 .footer {
     padding: 6rem 0;
-    background-color: var(--bg-color); /* Updated to use new var */
+    background-color: rgba(249, 247, 242, 0.98); /* Less transparent than background but blends */
     text-align: center;
     color: #444;
     border-top: 1px solid #e0d8cd; /* Darkened slightly for warm theme */
