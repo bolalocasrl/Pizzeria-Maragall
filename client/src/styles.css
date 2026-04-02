@@ -2,14 +2,14 @@
 :root {
     --maragall-red: #C1272D;
     --maragall-green: #006837;
-    --bg-wood-light: #f9f7f2; /* Un bianco caldo che ricorda il legno chiaro */
+    --bg-wood-light: #F7F2E9; /* Un bianco caldo che ricorda il legno chiaro */
     
     --bg-color: var(--bg-wood-light);
-    --text-color: #2a2a2a;
+    --text-color: #1A1A1A;
     --accent-red: var(--maragall-red);
     --accent-green: var(--maragall-green);
     --accent-gold: #e6b800;
-    --card-bg: #ffffff;
+    --card-bg: var(--bg-wood-light);
     --font-heading: 'Fraunces', serif;
     --font-body: 'Open Sans', sans-serif;
     --transition-speed: 0.4s;
@@ -31,7 +31,7 @@ html {
 body {
     font-family: var(--font-body);
     background-color: var(--bg-color);
-    background-image: linear-gradient(rgba(249, 247, 242, 0.95), rgba(249, 247, 242, 0.95)), url('/assets/heropm1.jpg');
+    background-image: linear-gradient(rgba(247, 242, 233, 0.95), rgba(247, 242, 233, 0.95)), url('/assets/heropm1.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -40,6 +40,20 @@ body {
     /* Increased for editorial feel */
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.03;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
 }
 
 h1,
@@ -118,7 +132,7 @@ img {
 }
 
 .btn-outline:hover {
-    background-color: white;
+    background-color: var(--bg-color);
     color: var(--text-color);
     transform: translateY(-2px);
     box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2);
@@ -186,7 +200,7 @@ img {
     padding: 0.5rem 0;
     /* Reduced padding further */
     z-index: 1000;
-    background-color: white;
+    background-color: var(--bg-color);
     /* Always white */
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
     /* Constant shadow */
@@ -284,7 +298,7 @@ img {
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: white;
+    background-color: var(--bg-color);
     min-width: 160px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
@@ -450,7 +464,7 @@ img {
     border: 1px solid #e0d8cd; /* Warmer border */
     padding: 3rem 4rem;
     margin-top: 2rem;
-    background-color: transparent;
+    background-color: var(--bg-color);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04); /* Softer shadow */
     border-radius: 4px;
 }
