@@ -308,3 +308,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+// Carosello Recensioni
+const track = document.querySelector('.recensioni-track');
+const dots = document.querySelectorAll('.dot');
+const prevBtn = document.querySelector('.carousel-prev');
+const nextBtn = document.querySelector('.carousel-next');
+let current = 0;
+const total = document.querySelectorAll('.recensione-card').length;
+
+function goTo(index) {
+    current = (index + total) % total;
+    track.style.transform = `translateX(-${current * 100}%)`;
+    dots.forEach(d => d.classList.remove('active'));
+    dots[current].classList.add('active');
+}
+
+if (track) {
+    prevBtn.addEventListener('click', () => goTo(current - 1));
+    nextBtn.addEventListener('click', () => goTo(current + 1));
+    dots.forEach((dot, i) => dot.addEventListener('click', () => goTo(i)));
+
+    // Auto-avanzamento ogni 5 secondi
+    setInterval(() => goTo(current + 1), 5000);
+}

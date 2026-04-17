@@ -2,7 +2,7 @@
 :root {
     --maragall-red: #C1272D;
     --maragall-green: #006837;
-    --bg-wood-light: #F7F2E9; /* Un bianco caldo che ricorda il legno chiaro */
+    --bg-wood-light: #E8DCC8; /* Un bianco caldo che ricorda il legno chiaro */
     
     --bg-color: var(--bg-wood-light);
     --text-color: #1A1A1A;
@@ -30,7 +30,7 @@ html {
 
 body {
     font-family: var(--font-body);
-    background-color: #F7F2E9 !important;
+    background-color: #E8DCC8 !important;
     background-image: none !important;
     color: var(--text-color);
     line-height: 1.9;
@@ -345,23 +345,31 @@ img {
 
 /* Mobile adjustments for lang selector */
 @media (max-width: 768px) {
-    .lang-dropdown {
-        margin-left: 0;
-        margin-top: 2rem;
+    .hero-logo-text {
+        font-size: 3.5rem;
+        margin-top: 3rem;
+    }
+
+    .nav-left .lang-dropdown {
+        display: flex;
     }
 
     .lang-menu {
-        position: relative;
-        box-shadow: none;
-        background-color: transparent;
-        text-align: center;
-        align-items: center;
-        padding-top: 1rem;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: auto;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        background-color: var(--bg-color);
+        text-align: left;
+        align-items: flex-start;
+        padding-top: 0.5rem;
+        min-width: 160px;
     }
 
     .lang-menu a {
-        justify-content: center;
-        font-size: 1.2rem;
+        justify-content: flex-start;
+        font-size: 0.95rem;
     }
 }
 
@@ -375,10 +383,11 @@ img {
 }
 
 
-/* Hero Section */
+/* Hero Section - CORRETTA */
 .hero {
     height: 95vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('/assets/heropm1.jpg');
+    /* La sfumatura ora va verso il color crema (#E8DCC8) per eliminare il distacco bianco */
+    background-image: linear-gradient(to top, rgba(247, 242, 233, 0.9) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.5) 100%), url('/assets/heropm1.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -388,6 +397,8 @@ img {
     text-align: center;
     position: relative;
     z-index: 2;
+    /* Forza il colore di fondo se l'immagine non carica */
+    background-color: #E8DCC8; 
 }
 
 .hero-logo-text {
@@ -650,24 +661,31 @@ img {
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 2rem; /* Add some gap to prevent polaroids from touching */
+    padding: 2rem; /* Add padding for the rotated polaroids */
 }
 
-.gallery-item {
-    height: 500px;
-    /* Taller gallery */
-    overflow: hidden;
-    position: relative;
+/* Polaroid frame effect */
+.polaroid-frame {
+    padding: 10px 10px 40px 10px; /* Extra bottom padding for classic polaroid look */
+    background: white;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    height: auto; /* Adjust height for polaroid */
+    max-width: 500px; /* Keep polaroids from getting too huge */
+    margin: 0 auto; /* Center them in their grid column */
 }
 
-.gallery-item img {
+.polaroid-frame img {
     width: 100%;
-    height: 100%;
+    height: 450px; /* Fixed height for image inside polaroid */
     object-fit: cover;
-    transition: transform 0.9s ease;
+    display: block;
+    transition: transform 0.4s ease;
 }
 
-.gallery-item:hover img {
-    transform: scale(1.03);
+.polaroid-frame:hover img {
+    transform: scale(1.02);
 }
 
 /* Reservation Section */
@@ -729,6 +747,7 @@ img {
 .social-icons {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 2rem;
     margin-bottom: 2.5rem;
 }
@@ -788,6 +807,131 @@ img {
 /* Responsive Utility Classes */
 .mobile-only {
     display: none;
+}
+/* Recensioni Section */
+.recensioni {
+    padding: 8rem 0;
+    background-color: transparent;
+    text-align: center;
+}
+
+.recensioni-carousel {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.recensioni-track {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.recensione-card {
+    min-width: 100%;
+    background-color: #f5ede0;
+    border-radius: 8px;
+    padding: 3rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.recensione-stelle {
+    color: var(--accent-gold);
+    font-size: 1.6rem;
+    letter-spacing: 4px;
+}
+
+.recensione-testo {
+    font-size: 1.15rem;
+    color: #444;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.8;
+    max-width: 550px;
+}
+
+.recensione-autore {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.recensione-nome {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #111;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.recensione-via {
+    font-size: 0.8rem;
+    color: #999;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    border: 1.5px solid #ddd;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    z-index: 10;
+}
+
+.carousel-btn:hover {
+    background-color: var(--accent-red);
+    color: white;
+    border-color: var(--accent-red);
+}
+
+.carousel-prev { left: -22px; }
+.carousel-next { right: -22px; }
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+    margin-top: 2rem;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: var(--accent-red);
+}
+
+@media (max-width: 768px) {
+    .recensione-card {
+        padding: 2rem 1.5rem;
+    }
+    .carousel-prev { left: 0; }
+    .carousel-next { right: 0; }
 }
 
 /* Responsive */
@@ -858,7 +1002,7 @@ img {
     }
 
     .pizza-mese-container {
-        flex-direction: column-reverse;
+        flex-direction: column;
         padding: 0;
         gap: 3rem;
     }
