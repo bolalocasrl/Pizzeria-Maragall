@@ -90,9 +90,9 @@
                 <h1 class="hero-logo-text" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">Pizzeria Maragall</h1>
                 <p class="hero-subtitle" data-key="hero_subtitle" style="text-shadow: 1px 1px 3px rgba(0,0,0,0.8); font-weight: 600;">PIZZA & CUCINA ITALIANA – BARCELONA</p>
                 <div class="hero-hours" style="margin-top: 1.5rem; color: white; font-family: 'Open Sans', sans-serif; letter-spacing: 0.05em; background: rgba(0,0,0,0.6); backdrop-filter: blur(6px); border: 1px solid rgba(255,255,255,0.3); padding: 1.2rem 2rem; display: inline-block; border-radius: 4px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-                    <p style="font-size: 0.85rem; text-transform: uppercase; opacity: 0.9; margin-bottom: 0.6rem; letter-spacing: 0.15em; font-weight: 600;">Orari</p>
-                    <p style="font-size: 1.05rem; margin: 0.3rem 0; text-shadow: 1px 1px 2px rgba(0,0,0,0.8);"><strong>Lunedì - Venerdì:</strong> 20:00 - 00:00</p>
-                    <p style="font-size: 1.05rem; margin: 0.3rem 0; text-shadow: 1px 1px 2px rgba(0,0,0,0.8);"><strong>Sabato - Domenica:</strong> 13:30 - 16:30 | 20:00 - 00:00</p>
+                    <p style="font-size: 0.85rem; text-transform: uppercase; opacity: 0.9; margin-bottom: 0.6rem; letter-spacing: 0.15em; font-weight: 600;" data-key="hours_title">Orari</p>
+                    <p style="font-size: 1.05rem; margin: 0.3rem 0; text-shadow: 1px 1px 2px rgba(0,0,0,0.8);" data-key="hours_week_line"><strong>Lunedì - Venerdì:</strong> 20:00 - 00:00</p>
+                    <p style="font-size: 1.05rem; margin: 0.3rem 0; text-shadow: 1px 1px 2px rgba(0,0,0,0.8);" data-key="hours_weekend_line"><strong>Sabato - Domenica:</strong> 13:30 - 16:30 | 20:00 - 00:00</p>
                 </div>
             </div>
         </header>
@@ -117,23 +117,23 @@
         <section id="pizza-mese" class="pizza-mese fade-in-section">
             <div class="container">
                 <div class="pizza-mese-container">
-                        <span class="badge" data-key="badge_pizza">🍕 Pizza del Mese</span>
-                        <div class="pizza-mese-image">
-                            <img
-                                src="/assets/heropm.jpg"
-                                alt="Pizza Maragall speciale del mese con ingredienti freschi, cotta nel forno a legna"
-                                loading="lazy"
-                            />
-                        </div>
-                        <div class="pizza-mese-content">
-                            <h2 style="font-size: 1.8rem;">SCOPRI LA PIZZA DEL MESE</h2>
-                            <p class="pizza-mese-desc" data-key="pizza_desc">
-                                Ogni mese il nostro Chef Fabrizio vi consiglia una pizza differente unendo gusti e sapori tipici italiani. Vieni a scoprire perché è la preferita del quartiere.
-                            </p>
-                            <a href="#contact" class="btn" data-key="btn_try">PROVALA ORA</a>
-                        </div>
-                    </div>
+            <div class="pizza-mese-container">
+                <div class="pizza-mese-content">
+                    <span class="badge" data-key="badge_pizza">🍕 Pizza del Mese</span>
+                    <h2 style="font-size: 1.8rem;" data-key="pizza_title">SCOPRI LA PIZZA DEL MESE</h2>
+                    <p class="pizza-mese-desc" data-key="pizza_desc">
+                        Ogni mese il nostro Chef Fabrizio vi consiglia una pizza differente unendo gusti e sapori tipici italiani. Vieni a scoprire perché è la preferita del quartiere.
+                    </p>
+                    <a href="#contact" class="btn" data-key="btn_try">PROVALA ORA</a>
                 </div>
+                <div class="pizza-mese-image">
+                    <img
+                        src="/assets/heropm.jpg"
+                        alt="Pizza Maragall speciale del mese con ingredienti freschi, cotta nel forno a legna"
+                        loading="lazy"
+                    />
+                </div>
+            </div>
             </div>
         </section>
 
@@ -253,8 +253,8 @@
         <!-- Recensioni Section -->
         <section id="recensioni" class="recensioni fade-in-section">
             <div class="container">
-                <h2 class="section-title">COSA DICONO <span class="text-accent-red">DI NOI</span></h2>
-                <p class="section-subtitle">Le opinioni dei nostri clienti</p>
+                <h2 class="section-title" data-key="reviews_title">COSA DICONO <span class="text-accent-red">DI NOI</span></h2>
+                <p class="section-subtitle" data-key="reviews_subtitle">Le opinioni dei nostri clienti</p>
 
                 <div class="recensioni-carousel">
                     <div class="recensioni-track">
@@ -326,7 +326,7 @@
                 </div>
 
                 <div style="text-align: center; margin-top: 3rem;">
-                    <a href="https://www.google.com/maps/place/Pizzeria+Maragall+S.L/@41.4176591,2.1803031,142m/data=!3m1!1e3!4m6!3m5!1s0x12a4a3a5d1fc76fd:0xfa682292c573e035!8m2!3d41.41762!4d2.18082!16s%2Fg%2F11f9_ly3ml" target="_blank" class="btn" style="background-color: transparent; border: 2px solid var(--text-color); color: var(--text-color);">LEGGI TUTTE LE RECENSIONI SU GOOGLE</a>
+                    <a href="https://www.google.com/maps/place/Pizzeria+Maragall+S.L/@41.4176591,2.1803031,142m/data=!3m1!1e3!4m6!3m5!1s0x12a4a3a5d1fc76fd:0xfa682292c573e035!8m2!3d41.41762!4d2.18082!16s%2Fg%2F11f9_ly3ml" target="_blank" class="btn" style="background-color: transparent; border: 2px solid var(--text-color); color: var(--text-color);" data-key="reviews_btn">LEGGI TUTTE LE RECENSIONI SU GOOGLE</a>
                 </div>
             </div>
         </section>
@@ -334,14 +334,14 @@
         <!-- Gallery Section -->
         <section id="gallery" class="gallery fade-in-section">
             <div class="gallery-grid">
-                <div class="gallery-item polaroid-frame" style="transform: rotate(-1deg);">
+                <div class="gallery-item">
                     <img
                         src="/assets/teampm.jpg"
                         alt="Il team di Pizzeria Maragall al lavoro"
                         loading="lazy"
                     />
                 </div>
-                <div class="gallery-item polaroid-frame" style="transform: rotate(1deg);">
+                <div class="gallery-item">
                     <img
                         src="/assets/terrazzapm.jpg"
                         alt="Terrazza esterna accogliente di Pizzeria Maragall a Barcellona"

@@ -43,8 +43,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // Smooth Scroll for Anchors
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+            if (href === '#') return;
             e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
+            const target = document.querySelector(href);
             if (target) {
                 target.scrollIntoView({
                     behavior: 'smooth'
@@ -71,21 +73,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Language Selector Logic
-    const langDropdown = document.querySelector('.lang-dropdown');
+    const langDropdowns = document.querySelectorAll('.lang-dropdown');
     const langBtn = document.querySelector('.lang-btn');
     const langLinks = document.querySelectorAll('.lang-menu a');
     
     // Toggle dropdown
-    if (langBtn && langDropdown) {
+    if (langBtn) {
         langBtn.addEventListener('click', (e) => {
             e.stopPropagation();
-            langDropdown.classList.toggle('active');
+            langDropdowns.forEach(d => d.classList.toggle('active'));
         });
 
-        // Close dropdown when clicking outside
         document.addEventListener('click', (e) => {
-            if (!langDropdown.contains(e.target)) {
-                langDropdown.classList.remove('active');
+            if (!langBtn.closest('.lang-dropdown').contains(e.target)) {
+                langDropdowns.forEach(d => d.classList.remove('active'));
             }
         });
     }
@@ -124,7 +125,12 @@ document.addEventListener('DOMContentLoaded', () => {
             'btn_book_now': 'PRENOTA ORA',
             'bottega_badge': 'NUOVA APERTURA',
             'bottega_desc': 'Focaccia italiana e vini locali. Un\'atmosfera intima e accogliente con una selezione accurata di vini di alta qualità. Il luogo ideale per un aperitivo autentico o una cena rilassata.',
-            'btn_bottega': 'SCOPRI BOTTEGA MARAGALL'
+            'btn_bottega': 'SCOPRI BOTTEGA MARAGALL', 'hours_title': 'Orari',
+            'hours_week_line': '<strong>Lunedì - Venerdì:</strong> 20:00 - 00:00',
+            'hours_weekend_line': '<strong>Sabato - Domenica:</strong> 13:30 - 16:30 | 20:00 - 00:00',
+            'pizza_title': 'SCOPRI LA PIZZA DEL MESE',
+            'reviews_title': 'COSA DICONO <span class="text-accent-red">DI NOI</span>',
+            'reviews_subtitle': 'Le opinioni dei nostri clienti', 'reviews_btn': 'LEGGI TUTTE LE RECENSIONI SU GOOGLE'
         },
         'en': {
             'nav_about': 'ABOUT US',
@@ -158,7 +164,12 @@ document.addEventListener('DOMContentLoaded', () => {
             'btn_book_now': 'BOOK NOW',
             'bottega_badge': 'NEW OPENING',
             'bottega_desc': 'Italian focaccia and local wines. An intimate and cozy atmosphere with a carefully selected range of high-quality wines. The ideal place for an authentic aperitif or a relaxed dinner.',
-            'btn_bottega': 'DISCOVER BOTTEGA MARAGALL'
+            'btn_bottega': 'DISCOVER BOTTEGA MARAGALL', 'hours_title': 'Opening Hours',
+            'hours_week_line': '<strong>Monday - Friday:</strong> 20:00 - 00:00',
+            'hours_weekend_line': '<strong>Saturday - Sunday:</strong> 13:30 - 16:30 | 20:00 - 00:00',
+            'pizza_title': 'DISCOVER THE PIZZA OF THE MONTH',
+            'reviews_title': 'WHAT THEY SAY <span class="text-accent-red">ABOUT US</span>',
+            'reviews_subtitle': 'Our customers\' opinions', 'reviews_btn': 'READ ALL REVIEWS ON GOOGLE'
         },
         'es': {
             'nav_about': 'NOSOTROS',
@@ -192,7 +203,12 @@ document.addEventListener('DOMContentLoaded', () => {
             'btn_book_now': 'RESERVAR AHORA',
             'bottega_badge': 'NUEVA APERTURA',
             'bottega_desc': 'Focaccia italiana y vinos locales. Una atmósfera íntima y acogedora con una selección cuidada de vinos de alta calidad. El lugar ideal para un aperitivo auténtico o una cena relajada.',
-            'btn_bottega': 'DESCUBRE BOTTEGA MARAGALL'
+            'btn_bottega': 'DESCUBRE BOTTEGA MARAGALL', 'hours_title': 'Horarios',
+            'hours_week_line': '<strong>Lunes - Viernes:</strong> 20:00 - 00:00',
+            'hours_weekend_line': '<strong>Sábado - Domingo:</strong> 13:30 - 16:30 | 20:00 - 00:00',
+            'pizza_title': 'DESCUBRE LA PIZZA DEL MES',
+            'reviews_title': 'QUÉ DICEN <span class="text-accent-red">DE NOSOTROS</span>',
+            'reviews_subtitle': 'Las opiniones de nuestros clientes', 'reviews_btn': 'LEE TODAS LAS RESEÑAS EN GOOGLE'
         },
         'ca': {
             'nav_about': 'NOSALTRES',
@@ -226,7 +242,12 @@ document.addEventListener('DOMContentLoaded', () => {
             'btn_book_now': 'RESERVAR ARA',
             'bottega_badge': 'NOVA OBERTURA',
             'bottega_desc': 'Focaccia italiana i vins locals. Una atmosfera íntima i acollidora amb una selecció acurada de vins d\'alta qualitat. El lloc ideal per a un aperitiu autèntic o un sopar relaxat.',
-            'btn_bottega': 'DESCOBREIX BOTTEGA MARAGALL'
+            'btn_bottega': 'DESCOBREIX BOTTEGA MARAGALL', 'hours_title': 'Horaris',
+            'hours_week_line': '<strong>Dilluns - Divendres:</strong> 20:00 - 00:00',
+            'hours_weekend_line': '<strong>Dissabte - Diumenge:</strong> 13:30 - 16:30 | 20:00 - 00:00',
+            'pizza_title': 'DESCOBREIX LA PIZZA DEL MES',
+            'reviews_title': 'QUÈ DIUEN <span class="text-accent-red">DE NOSALTRES</span>',
+            'reviews_subtitle': 'Les opinions dels nostres clients', 'reviews_btn': 'LLEGEIX TOTES LES RESSENYES A GOOGLE'
         },
         'fr': {
             'nav_about': 'QUI SOMMES-NOUS',
@@ -260,7 +281,12 @@ document.addEventListener('DOMContentLoaded', () => {
             'btn_book_now': 'RÉSERVER MAINTENANT',
             'bottega_badge': 'NOUVELLE OUVERTURE',
             'bottega_desc': 'Focaccia italienne et vins locaux. Une atmosphère intime et accueillante avec une sélection soignée de vins de haute qualité. L\'endroit idéal pour un apéritif authentique ou un dîner détendu.',
-            'btn_bottega': 'DÉCOUVREZ BOTTEGA MARAGALL'
+            'btn_bottega': 'DÉCOUVREZ BOTTEGA MARAGALL', 'hours_title': 'Horaires',
+            'hours_week_line': '<strong>Lundi - Vendredi:</strong> 20:00 - 00:00',
+            'hours_weekend_line': '<strong>Samedi - Dimanche:</strong> 13:30 - 16:30 | 20:00 - 00:00',
+            'pizza_title': 'DÉCOUVREZ LA PIZZA DU MOIS',
+            'reviews_title': 'CE QU\'ILS DISENT <span class="text-accent-red">DE NOUS</span>',
+            'reviews_subtitle': 'Les avis de nos clients', 'reviews_btn': 'LIRE TOUS LES AVIS SUR GOOGLE'
         }
     };
 
@@ -274,27 +300,23 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Change language function
     function setLanguage(lang) {
-        // Update button flag
-        langBtn.innerHTML = `${flagMap[lang]} <i data-lucide="chevron-down" class="chevron"></i>`;
-        lucide.createIcons(); // Re-init icons for the chevron
-        
-        // Translate elements
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.innerHTML = `${flagMap[lang]} <i data-lucide="chevron-down" class="chevron"></i>`;
+        });
+        lucide.createIcons();
+
         document.querySelectorAll('[data-key]').forEach(el => {
             const key = el.getAttribute('data-key');
             if (translations[lang] && translations[lang][key]) {
                 el.innerHTML = translations[lang][key];
             }
         });
-        
-        // Update HTML lang attribute
+
         document.documentElement.lang = lang;
-        
-        // Close dropdown
-        langDropdown.classList.remove('active');
-        
-        // Close mobile menu if open
+        langDropdowns.forEach(d => d.classList.remove('active'));
+
         if (window.innerWidth <= 768) {
-             navLinks.classList.remove('mobile-open');
+            navLinks.classList.remove('mobile-open');
         }
     }
     

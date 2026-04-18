@@ -485,7 +485,7 @@ img {
 
 /* Pizza del Mese Section (Priority) */
 .pizza-mese {
-    padding: 12rem 0;
+    padding: 6rem 0;
     background-color: transparent; /* Updated to blend seamlessly */
     position: relative;
 }
@@ -661,31 +661,24 @@ img {
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem; /* Add some gap to prevent polaroids from touching */
-    padding: 2rem; /* Add padding for the rotated polaroids */
 }
 
-/* Polaroid frame effect */
-.polaroid-frame {
-    padding: 10px 10px 40px 10px; /* Extra bottom padding for classic polaroid look */
-    background: white;
-    border: 1px solid #e0e0e0;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-    height: auto; /* Adjust height for polaroid */
-    max-width: 500px; /* Keep polaroids from getting too huge */
-    margin: 0 auto; /* Center them in their grid column */
+.gallery-item {
+    height: 500px;
+    /* Taller gallery */
+    overflow: hidden;
+    position: relative;
 }
 
-.polaroid-frame img {
+.gallery-item img {
     width: 100%;
-    height: 450px; /* Fixed height for image inside polaroid */
+    height: 100%;
     object-fit: cover;
-    display: block;
-    transition: transform 0.4s ease;
+    transition: transform 0.9s ease;
 }
 
-.polaroid-frame:hover img {
-    transform: scale(1.02);
+.gallery-item:hover img {
+    transform: scale(1.03);
 }
 
 /* Reservation Section */
@@ -1007,6 +1000,10 @@ img {
         gap: 3rem;
     }
 
+    #pizza-mese .pizza-mese-image {
+        order: -1;
+    }
+
     /* Override for specific reversed sections on mobile to keep column-reverse */
     .bottega-container-reverse {
         flex-direction: column !important;
@@ -1058,5 +1055,10 @@ img {
         background-attachment: scroll; /* Fix for mobile pixelation/zoom */
         background-position: center;
         height: 100vh; /* Ensure full height on mobile */
+    }
+}
+@media (max-width: 768px) {
+    #pizza-mese .pizza-mese-image {
+        order: -1;
     }
 }
