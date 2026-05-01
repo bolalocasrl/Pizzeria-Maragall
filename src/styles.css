@@ -216,6 +216,7 @@ img {
     height: 100%;
     position: relative;
     width: 100%;
+    padding: 0 1.2rem;
 }
 
 .logo {
@@ -265,7 +266,7 @@ img {
     position: relative;
     display: flex;
     align-items: center;
-    margin-left: 1.5rem;
+    margin-left: 0;
 }
 
 .lang-btn {
